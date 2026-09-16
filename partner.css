@@ -1,0 +1,105 @@
+/* ===== 合作伙伴页（partner.html） =====
+   复用 learn-hero 风格的深色顶部 + 浅色主体，
+   卡片网格遵循全站编辑杂志风的硬边框 + 偏移阴影。 */
+
+/* Hero 直接复用 .learn-hero.cases-hero 的尺寸/规格，
+   此处只追加 partner 专属细节（meta-row + 入口链接）。 */
+.partner-hero .partner-meta-row{
+  margin-top:8px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+}
+.partner-hero .partner-join-link{
+  font-family:var(--mono);font-size:13px;letter-spacing:.06em;color:var(--paper);
+  border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:3px;
+  transition:color .2s,border-color .2s,gap .2s;
+  display:inline-flex;align-items:center;gap:8px;
+}
+.partner-hero .partner-join-link:hover{
+  color:#8FB2F2;border-color:#8FB2F2;gap:12px;
+}
+
+/* 筛选条 */
+.partner-section{padding:48px 0 96px}
+.partner-filter{
+  display:flex;flex-wrap:wrap;gap:10px;justify-content:center;
+  padding:0 0 32px;
+}
+.partner-filter button{
+  font-family:var(--mono);font-size:12px;letter-spacing:.06em;
+  padding:8px 18px;border:1.5px solid var(--ink);background:transparent;
+  color:var(--ink-2);cursor:pointer;transition:all .2s ease;
+}
+.partner-filter button:hover{border-color:var(--accent);color:var(--ink)}
+.partner-filter button.is-active{
+  background:var(--ink);color:var(--paper);border-color:var(--ink);
+}
+
+/* 卡片网格 — 跟随全站卡片样式（border 1.5 ink + hover 抬升 + 偏移阴影） */
+.partner-grid{
+  display:grid;gap:24px;
+  grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+}
+.partner-card{
+  background:#fff;border:1.5px solid var(--ink);padding:32px 28px;
+  display:flex;flex-direction:column;gap:18px;position:relative;
+  transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s;
+}
+.partner-card:hover{
+  transform:translate(-4px,-4px);box-shadow:6px 6px 0 var(--ink);
+}
+.partner-card-logo{
+  width:56px;height:56px;border:1.5px solid var(--ink);
+  background:var(--accent-soft);color:var(--accent);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--serif);font-weight:900;font-size:22px;flex-shrink:0;
+}
+.partner-card-head{display:flex;align-items:flex-start;gap:16px}
+.partner-card-title{
+  font-family:var(--serif);font-weight:900;font-size:20px;line-height:1.4;
+  color:var(--ink);margin:0 0 8px;
+}
+.partner-card-meta{display:flex;flex-wrap:wrap;gap:6px}
+.partner-tier{
+  display:inline-flex;align-items:center;gap:6px;
+  font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+  padding:4px 10px;background:var(--ink);color:var(--paper);
+  text-transform:uppercase;
+}
+.partner-tier--region{background:var(--accent);color:#fff}
+.partner-region{
+  display:inline-flex;align-items:center;gap:6px;
+  font-family:var(--mono);font-size:11px;letter-spacing:.04em;
+  padding:4px 10px;border:1px solid var(--line);color:var(--ink-2);
+}
+.partner-card-desc{
+  font-size:14px;line-height:1.85;color:var(--ink-2);margin:0;
+}
+.partner-card-foot{
+  margin-top:auto;padding-top:14px;border-top:1px dashed var(--line);
+  font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--ink-3);
+  display:flex;justify-content:space-between;align-items:center;
+}
+
+/* 空状态 */
+.partner-empty{
+  text-align:center;padding:80px 20px;color:var(--ink-2);display:none;
+  border:1.5px dashed var(--line);background:var(--paper-2);
+  margin-top:24px;
+}
+.partner-empty.is-visible{display:block}
+.partner-empty h3{
+  font-family:var(--serif);font-weight:900;font-size:24px;color:var(--ink);
+  margin:0 0 12px;
+}
+.partner-empty p{margin:0 0 24px}
+.partner-empty button{
+  font-family:var(--sans);font-size:14px;font-weight:600;
+  padding:10px 22px;border:1.5px solid var(--ink);background:transparent;
+  color:var(--ink);cursor:pointer;transition:all .2s ease;
+}
+.partner-empty button:hover{background:var(--ink);color:var(--paper);transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--accent)}
+
+/* 响应式 */
+@media(max-width:720px){
+  .partner-section{padding:36px 0 80px}
+  .partner-card{padding:24px 20px}
+}

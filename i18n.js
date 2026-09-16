@@ -10,6 +10,7 @@
     'nav.deploy': 'Deployment',
     'nav.pricing': 'Pricing',
     'nav.cases': 'Use Cases',
+    'nav.partners': 'Partners',
     'nav.trial': 'Request Demo',
 
     'hero.kicker': '<span class="kicker-dot"></span>ENTERPRISE AGENT SOLUTION',
@@ -445,8 +446,38 @@
     'cta.p': 'Every industry has know-how worth distilling. 15-day SaaS trial or 1-month private POC — let’s turn your scenarios into reusable AI skills together.',
     'cta.btn': 'Request Custom POC',
 
-    'footer.slogan': "Make AI agents every employee's “digital colleague”"
-  };
+    'footer.slogan': "Make AI agents every employee's “digital colleague”",
+
+    // ===== partner.html =====
+    'partner.meta.title': 'Partners — QUSEIT',
+    'partner.meta.desc': 'Regional distributors, system integrators and ecosystem partners bringing QUSEIT agents to every industry.',
+    'partner.eyebrow': 'PARTNERS · Ecosystem',
+    'partner.title': 'QUSEIT Partner Network',
+    'partner.subtitle': 'Authorized regional distributors and system integrators — bringing QUSEIT agents into e-commerce, education, finance, and public services.',
+    'partner.hero.join': '→ Become a Partner',
+    'partner.filter.all': 'All Partners',
+    'partner.filter.region': 'Regional Distributors',
+    'partner.filter.si': 'System Integrators',
+    'partner.filter.edu': 'Education & Training',
+    'partner.1.name': 'Silk Road (Guangxi) Technology Co., Ltd.',
+    'partner.1.tier': 'Regional Distributor',
+    'partner.1.region': 'Guangxi, China',
+    'partner.1.desc': 'A Guangxi-based technology company focused on empowering e-commerce, education and other industries with AI, driving industrial intelligence upgrades.',
+    'partner.1.role': 'Authorized Partner',
+    'partner.2.name': 'Nanning Ula Intelligent Technology Co., Ltd.',
+    'partner.2.tier': 'System Integrator',
+    'partner.2.region': 'Nanning, Guangxi, China',
+    'partner.2.desc': 'A Nanning-based AI product and engineering team building and operating multiple AI tools for global users — expert at integrating agent capabilities into e-commerce, content creation and enterprise systems, serving 170,000+ users cumulatively.',
+    'partner.2.role': 'Authorized Partner',
+    'partner.3.name': 'Guangxi Keweixun Internet Technology Co., Ltd.',
+    'partner.3.tier': 'Education & Training',
+    'partner.3.region': 'Guangxi, China',
+    'partner.3.desc': 'A local Guangxi AI growth-service provider. Focused on AI hands-on training, intelligent app development and operations — solving customer-acquisition pain points for local SMBs.',
+    'partner.3.role': 'Authorized Partner',
+    'partner.empty.title': 'No matching Partners',
+    'partner.empty.body': 'Try another filter, or clear filters to see the full directory.',
+    'partner.empty.clear': 'Clear Filters',
+    };
 
   // 复制按钮提示语
   const tips = {

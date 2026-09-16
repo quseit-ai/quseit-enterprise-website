@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n-title="partner.meta.title">合作伙伴 — QUSEIT</title>
+<meta name="description" data-i18n-desc="partner.meta.desc" content="地区总代理、系统集成商与生态伙伴,把 QUSEIT 智能体带到各行各业。">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="partner.css">
+</head>
+<body>
+
+<!-- ===== 导航（与 index.html 一致） ===== -->
+<header class="nav subpage-nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <img src="logo.svg" alt="QAgent Logo" class="brand-logo">
+      <span class="brand-name">QUSEIT</span>
+      <span class="brand-tag" data-i18n="brand.tag">企业智能体</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#values" data-i18n="nav.values">核心价值</a>
+      <a href="index.html#product" data-i18n="nav.product">产品架构</a>
+      <a href="index.html#deploy" data-i18n="nav.deploy">部署方式</a>
+      <a href="index.html#pricing" data-i18n="nav.pricing">价格</a>
+      <a href="cases/index.html" data-i18n="nav.cases">应用场景</a>
+    </nav>
+    <button class="lang-switch mono" id="langSwitch" aria-label="切换语言">EN</button>
+    <div class="nav-cta">
+      <a href="#" class="btn btn-solid demo-open" data-i18n="nav.trial">请求演示</a>
+    </div>
+    <button class="nav-burger" id="burger" aria-label="菜单"><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ===== Hero (复用 learn-hero 风格) ===== -->
+<section class="cases-hero partner-hero">
+  <div class="container">
+    <p class="kicker reveal" data-i18n="partner.eyebrow"><span class="kicker-dot"></span>PARTNERS · 合作伙伴网络</p>
+    <h1 class="reveal d1" data-i18n="partner.title">QUSEIT 合作伙伴网络</h1>
+    <p class="learn-sub reveal d2" data-i18n="partner.subtitle">经过认证的地区总代理与系统集成商，把 QUSEIT 智能体带入电商、教育、金融与公共服务等行业。</p>
+    <div class="partner-meta-row reveal d3">
+      <a href="mailto:partners@quseit.com?subject=Partner%20Application" class="partner-join-link" data-i18n="partner.hero.join">→ 成为合作伙伴</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 筛选条 + 卡片网格 ===== -->
+<section class="partner-section">
+  <div class="container">
+
+    <div class="partner-filter" role="tablist" aria-label="Partner filters">
+      <button class="is-active" data-filter="all" data-i18n="partner.filter.all">全部合作伙伴</button>
+      <button data-filter="region" data-i18n="partner.filter.region">地区总代理</button>
+      <button data-filter="si" data-i18n="partner.filter.si">系统集成商</button>
+      <button data-filter="edu" data-i18n="partner.filter.edu">教育培训</button>
+    </div>
+
+    <div class="partner-grid" id="partnerGrid">
+
+      <article class="partner-card" data-tier="region">
+        <div class="partner-card-head">
+          <div class="partner-card-logo" aria-hidden="true">SR</div>
+          <div>
+            <h2 class="partner-card-title" data-i18n="partner.1.name">丝路（广西）科技有限公司</h2>
+            <div class="partner-card-meta">
+              <span class="partner-tier partner-tier--region" data-i18n="partner.1.tier">地区总代理</span>
+              <span class="partner-region" data-i18n="partner.1.region">中国 广西</span>
+            </div>
+          </div>
+        </div>
+        <p class="partner-card-desc" data-i18n="partner.1.desc">一家立足广西的技术企业，专注于以 AI 技术赋能电商、教育等各行各业，助力产业智能化升级。</p>
+        <div class="partner-card-foot">
+          <span data-i18n="partner.1.role">Authorized Partner</span>
+          <span>2024</span>
+        </div>
+      </article>
+
+      <article class="partner-card" data-tier="si">
+        <div class="partner-card-head">
+          <div class="partner-card-logo" aria-hidden="true">UA</div>
+          <div>
+            <h2 class="partner-card-title" data-i18n="partner.2.name">南宁乌拉智能科技有限责任公司</h2>
+            <div class="partner-card-meta">
+              <span class="partner-tier" data-i18n="partner.2.tier">系统集成商</span>
+              <span class="partner-region" data-i18n="partner.2.region">中国 广西 南宁</span>
+            </div>
+          </div>
+        </div>
+        <p class="partner-card-desc" data-i18n="partner.2.desc">立足南宁的 AI 产品与工程团队，自研并运营多款面向全球用户的 AI 工具，擅长把智能体能力集成到电商、内容创作与企业系统中，累计服务用户超 17 万。</p>
+        <div class="partner-card-foot">
+          <span data-i18n="partner.2.role">Authorized Partner</span>
+          <span>2024</span>
+        </div>
+      </article>
+
+      <article class="partner-card" data-tier="edu">
+        <div class="partner-card-head">
+          <div class="partner-card-logo" aria-hidden="true">KW</div>
+          <div>
+            <h2 class="partner-card-title" data-i18n="partner.3.name">广西科威讯互联网科技有限公司</h2>
+            <div class="partner-card-meta">
+              <span class="partner-tier" data-i18n="partner.3.tier">教育培训</span>
+              <span class="partner-region" data-i18n="partner.3.region">中国 广西</span>
+            </div>
+          </div>
+        </div>
+        <p class="partner-card-desc" data-i18n="partner.3.desc">广西本土 AI 增长服务商。专注 AI 实战培训、智能应用开发与运营，聚焦本地中小企业 AI 流量获客痛点。</p>
+        <div class="partner-card-foot">
+          <span data-i18n="partner.3.role">Authorized Partner</span>
+          <span>2024</span>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="partner-empty" id="partnerEmpty">
+      <h3 data-i18n="partner.empty.title">没有匹配的合作伙伴</h3>
+      <p data-i18n="partner.empty.body">尝试其它筛选，或清除筛选查看完整目录。</p>
+      <button type="button" id="partnerEmptyClear" data-i18n="partner.empty.clear">清除筛选</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== Footer（与 index.html 一致） ===== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="logo.svg" alt="QAgent Logo" class="brand-logo">
+      <div>
+        <b> QUSEIT Agent (QAgent) </b>
+        <p data-i18n="footer.slogan">让 AI 智能体成为每个员工的「数字同事」</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html#values" data-i18n="nav.values">核心价值</a>
+      <a href="index.html#product" data-i18n="nav.product">产品架构</a>
+      <a href="index.html#deploy" data-i18n="nav.deploy">部署方式</a>
+      <a href="index.html#pricing" data-i18n="nav.pricing">价格</a>
+      <a href="cases/index.html" data-i18n="nav.cases">应用场景</a>
+      <a href="partner.html" data-i18n="nav.partners">合作伙伴</a>
+    </div>
+    <p class="footer-copy mono">© 2026 QUSEIT · ENTERPRISE AGENT SOLUTION</p>
+  </div>
+</footer>
+
+<!-- ===== 请求演示模态框 ===== -->
+<div class="demo-modal" id="demoModal" aria-hidden="true">
+  <div class="demo-dialog" role="dialog" aria-modal="true" aria-label="请求演示">
+    <iframe class="demo-frame" id="demoFrame" data-src="https://iwwtpmp09eo.feishu.cn/share/base/form/shrcnGSnBhjH4Q6jxZCGZ9BE2Ac" title="请求演示表单"></iframe>
+  </div>
+</div>
+
+<script src="i18n.js"></script>
+<script src="main.js"></script>
+<script>
+// 合作伙伴筛选逻辑（纯 JS，无依赖）
+(function(){
+  const grid = document.getElementById('partnerGrid');
+  const empty = document.getElementById('partnerEmpty');
+  const filterBtns = document.querySelectorAll('.partner-filter button');
+  const emptyClear = document.getElementById('partnerEmptyClear');
+  if(!grid || !filterBtns.length) return;
+
+  function applyFilter(value){
+    let visible = 0;
+    grid.querySelectorAll('.partner-card').forEach(card => {
+      const tier = card.getAttribute('data-tier') || '';
+      const show = value === 'all' || tier === value;
+      card.style.display = show ? '' : 'none';
+      if(show) visible++;
+    });
+    filterBtns.forEach(b => {
+      b.classList.toggle('is-active', b.getAttribute('data-filter') === value);
+    });
+    if(empty){
+      empty.classList.toggle('is-visible', visible === 0);
+    }
+  }
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => applyFilter(btn.getAttribute('data-filter')));
+  });
+  if(emptyClear){
+    emptyClear.addEventListener('click', () => applyFilter('all'));
+  }
+})();
+</script>
+</body>
+</html>
