@@ -95,19 +95,8 @@
         <span class="tag" data-i18n="doc.video.tag">DEMO · 产品演示</span>
         <h2 data-i18n="doc.video.title">智能文档应答 · 2 分钟产品演示</h2>
       </div>
-      <div class="video-placeholder" data-video-src="">
-        <div class="vp-bg"></div>
-        <span class="vp-label mono" data-i18n="doc.video.label">DEMO · 演示视频</span>
-        <div class="vp-play" aria-label="播放演示视频">
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7 4 L20 12 L7 20 Z" fill="#fff"/>
-          </svg>
-        </div>
-        <div class="vp-caption">
-          <b data-i18n="doc.video.title">智能文档应答 · 2 分钟产品演示</b>
-          <span data-i18n="doc.video.desc">从上传预案库到现场提问、AI 给出带引用的回答 —— 一镜到底。</span>
-        </div>
-        <span class="vp-duration mono" data-i18n="doc.video.duration">02:30</span>
+      <div class="video-player">
+        <iframe src="https://player.bilibili.com/player.html?bvid=BV1pfeC6HEXY&page=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" referrerpolicy="no-referrer"></iframe>
       </div>
     </div>
 
@@ -241,13 +230,5 @@
 
 <script src="../i18n.js"></script>
 <script src="../main.js"></script>
-<script>
-  // 视频占位符点击 —— 留 hook，将来可替换为实际 video/iframe
-  document.querySelector('.video-placeholder')?.addEventListener('click', () => {
-    const src = document.querySelector('.video-placeholder').dataset.videoSrc;
-    if (src) location.href = src;
-    else alert('演示视频即将上线，请先预约现场演示。');
-  });
-</script>
 </body>
 </html>
