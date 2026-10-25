@@ -86,6 +86,57 @@ a{color:inherit;text-decoration:none}
 .nav-burger{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:6px;margin-left:auto}
 .nav-burger span{width:24px;height:2px;background:var(--ink);display:block}
 
+/* ===== 导航下拉（服务）===== */
+.nav-drop{position:relative;display:flex;align-items:center}
+.nav-drop-btn{
+  display:flex;align-items:center;gap:6px;
+  background:none;border:none;padding:4px 0;cursor:pointer;
+  font-family:inherit;font-size:14px;font-weight:500;color:var(--ink-2);
+  position:relative;transition:color .25s;
+}
+.nav-drop-btn::after{
+  content:"";position:absolute;left:0;bottom:0;width:0;height:2px;
+  background:var(--accent);transition:width .3s;
+}
+.nav-drop:hover .nav-drop-btn,
+.nav-drop.open .nav-drop-btn,
+.nav-drop:focus-within .nav-drop-btn{color:var(--ink)}
+.nav-drop:hover .nav-drop-btn::after,
+.nav-drop.open .nav-drop-btn::after,
+.nav-drop:focus-within .nav-drop-btn::after{width:100%}
+/* 下拉箭头：与 quseit-website 导航「产品」同款 CSS 雪佛龙，
+   用 ::before + order:2 放在文字之后（::after 已用于下划线动画） */
+.nav-drop-btn::before{
+  content:"";order:2;
+  width:6px;height:6px;margin-bottom:3px;
+  border-right:1.5px solid currentColor;
+  border-bottom:1.5px solid currentColor;
+  transform:rotate(45deg) translate(-2px,-2px);
+  transition:transform .2s;
+}
+.nav-drop:hover .nav-drop-btn::before,
+.nav-drop.open .nav-drop-btn::before,
+.nav-drop:focus-within .nav-drop-btn::before{
+  transform:rotate(225deg) translate(-2px,-2px);
+}
+.nav-drop-menu{
+  position:absolute;top:100%;left:-18px;margin-top:16px;min-width:158px;
+  display:none;flex-direction:column;padding:10px 0;
+  background:var(--paper);border:1.5px solid var(--ink);
+  box-shadow:6px 6px 0 var(--accent-soft);z-index:101;
+}
+/* 用伪元素补上 16px 空隙，鼠标从按钮移到菜单时不丢 hover */
+.nav-drop-menu::before{content:"";position:absolute;left:0;right:0;top:-16px;height:16px}
+.nav-drop:hover .nav-drop-menu,
+.nav-drop.open .nav-drop-menu,
+.nav-drop:focus-within .nav-drop-menu{display:flex}
+.nav-drop-menu a{
+  padding:10px 20px;font-size:13.5px;color:var(--ink-2);white-space:nowrap;
+  transition:background .2s,color .2s,padding-left .2s;
+}
+.nav-drop-menu a::after{display:none}
+.nav-drop-menu a:hover{background:var(--paper-2);color:var(--accent);padding-left:24px}
+
 /* ===== Hero ===== */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:110px 0 60px;overflow:hidden}
 .hero-grid-lines{
@@ -367,6 +418,19 @@ a{color:inherit;text-decoration:none}
     display:flex;position:absolute;top:68px;left:0;right:0;flex-direction:column;
     background:var(--paper);border-bottom:1.5px solid var(--ink);padding:20px 32px;gap:16px;
   }
+  /* 移动端下拉改为内联展开，子项常驻可见 */
+  .nav.open .nav-drop{display:block;width:100%}
+  .nav.open .nav-drop-btn{width:100%;justify-content:flex-start;font-size:15px;cursor:default}
+  .nav.open .nav-drop-caret{display:none}
+  .nav.open .nav-drop-btn::before{display:none}
+  .nav.open .nav-drop-menu{
+    position:static;display:flex;margin:8px 0 0;padding:0 0 0 14px;
+    border:none;border-left:2px solid var(--line);box-shadow:none;
+    background:none;min-width:0;
+  }
+  .nav.open .nav-drop-menu::before{display:none}
+  .nav.open .nav-drop-menu a{padding:8px 0;font-size:14px}
+  .nav.open .nav-drop-menu a:hover{padding-left:4px;background:none}
   .section{padding:72px 0}
   .container{padding:0 20px}
   .price-cards,.why-grid{grid-template-columns:1fr}

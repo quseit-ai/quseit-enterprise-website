@@ -5,6 +5,7 @@
     'meta.desc': "QAgent Enterprise Agent Solution: a personal AI assistant for every employee, enterprise-grade understanding, and full control. Turn every employee into an AI-era super individual.",
 
     'brand.tag': 'Enterprise Agents',
+    'nav.services': 'Services',
     'nav.values': 'Value',
     'nav.product': 'Product',
     'nav.deploy': 'Deployment',
@@ -517,7 +518,7 @@
     'fde.role.2.h3': 'Business lead / process owner',
     'fde.role.2.p': 'Knows where it actually hurts. They decide which scenario is worth doing and what "good enough" means — that judgment determines half of the outcome.',
     'fde.role.3.tag': 'ROLE · 03',
-    'fde.role.3.h3': 'Data / AI implementation engineer',
+    'fde.role.3.h3': 'Agent engineer',
     'fde.role.3.p': 'Builds the skills and debugs them until they work. This role does the most hands-on work in the program.',
     'fde.prereq.label': 'PREREQUISITES',
     'fde.prereq.1': 'At least 2 people from the same team — a solo attendee cannot replicate this internally',

@@ -11,6 +11,27 @@ document.querySelectorAll('.nav-links a').forEach(a =>
   a.addEventListener('click', () => nav.classList.remove('open'))
 );
 
+// 导航下拉（服务）：点击切换，供触屏与键盘使用；hover 由 CSS 负责
+document.querySelectorAll('.nav-drop').forEach(drop => {
+  const btn = drop.querySelector('.nav-drop-btn');
+  if (!btn) return;
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    const open = drop.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+});
+const closeDrops = () => {
+  document.querySelectorAll('.nav-drop.open').forEach(d => {
+    d.classList.remove('open');
+    d.querySelector('.nav-drop-btn')?.setAttribute('aria-expanded', 'false');
+  });
+};
+document.addEventListener('click', closeDrops);
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeDrops();
+});
+
 // 滚动显现动画
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => {
