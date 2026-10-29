@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n-title="u1000.meta.title">U1000 · FDE 实践者赋能计划 — QUSEIT</title>
+<meta name="description" data-i18n-desc="u1000.meta.desc" content="U1000 是优趣天下(QUSEIT)推出的 AI 实践者赋能计划:24 门企业场景工作坊,帮 1000 位 AI 实践者掌握 FDE 技能,把智能体真正用进业务里。">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="1000-fdes.css">
+</head>
+<body>
+
+<!-- ===== 导航 ===== -->
+<header class="nav subpage-nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <img src="logo.svg" alt="QAgent Logo" class="brand-logo">
+      <span class="brand-name">QUSEIT</span>
+      <span class="brand-tag" data-i18n="brand.tag">企业智能体</span>
+    </a>
+    <nav class="nav-links">
+      <div class="nav-drop">
+        <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
+          <span data-i18n="nav.services">服务</span>
+        </button>
+        <div class="nav-drop-menu">
+          <a href="index.html#values" data-i18n="nav.values">核心价值</a>
+          <a href="index.html#product" data-i18n="nav.product">产品架构</a>
+          <a href="index.html#deploy" data-i18n="nav.deploy">部署方式</a>
+        </div>
+      </div>
+      <a href="index.html#pricing" data-i18n="nav.pricing">价格</a>
+      <a href="cases/index.html" data-i18n="nav.cases">应用场景</a>
+      <a href="fde.html" data-i18n="nav.fde">FDE 培训</a>
+    </nav>
+    <button class="lang-switch mono" id="langSwitch" aria-label="切换语言">EN</button>
+    <div class="nav-cta">
+      <a href="#signup" class="btn btn-solid" data-i18n="u1000.nav.cta">报名首场</a>
+    </div>
+    <button class="nav-burger" id="burger" aria-label="菜单"><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="cases-hero u1000-hero">
+  <div class="container u1000-hero-inner">
+    <nav class="u1000-crumb" aria-label="面包屑">
+      <a href="index.html" data-i18n="u1000.crumb.home">首页</a>
+      <span class="sep">/</span>
+      <span class="cur" data-i18n="u1000.crumb.cur">U1000 · FDE 实践者赋能计划</span>
+    </nav>
+
+    <p class="kicker reveal" data-i18n="u1000.hero.kicker">CAMPAIGN · U1000 · FDE 实践者赋能计划</p>
+
+    <h1 class="reveal d1" data-i18n="u1000.hero.title">帮 1000 位 AI 实践者,<br>把智能体真正用进业务里</h1>
+
+    <p class="u1000-sub reveal d2" data-i18n="u1000.hero.sub">24 门工作坊,每门都是一条真实企业业务流程 —— 从连上数据库问数,到把智能体部署进企业内网。每门课结束时,你必须交出一个能演示的东西。</p>
+
+    <div class="hero-actions reveal d3">
+      <a href="#signup" class="btn btn-solid btn-lg" data-i18n="u1000.hero.cta1">报名首场工作坊</a>
+      <a href="#curriculum" class="btn btn-line btn-lg" data-i18n="u1000.hero.cta2">看 24 门课程 <span class="arrow">→</span></a>
+    </div>
+
+    <div class="u1000-status reveal d4">
+      <span class="u1000-chip"><span data-i18n="u1000.chip.1t">首战工作坊</span> · <span data-i18n="u1000.chip.1s">每月 2 场</span></span>
+      <span class="u1000-chip is-stage" data-i18n="u1000.chip.2">24 门课 · 6 个阶段</span>
+      <span class="u1000-chip"><span data-i18n="u1000.chip.3t">目标</span> <span class="num">1000</span> <span data-i18n="u1000.chip.3s">位实践者</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY ===== -->
+<section class="u1000-sec">
+  <div class="u1000-inner">
+    <p class="u1000-label" data-i18n="u1000.why.label">WHY · 为什么做这件事</p>
+    <h2 class="u1000-title" data-i18n="u1000.why.title">工具不缺,缺的是能把业务跑通的人</h2>
+    <p class="u1000-prose" data-i18n="u1000.why.p1">企业买了平台、接了模型,却停在 demo 阶段。真实原因通常不是技术不够 —— 是没人能把一条业务流程翻译成能跑的智能体,更没人能把它过评审、上线、交给业务真的用起来。</p>
+    <p class="u1000-prose" data-i18n="u1000.why.p2">U1000 要培养的就是这个人:FDE。我们不讲概念,直接给一条真实业务 —— 订单、工单、对账、采购、合同。二十四门课,二十四条业务线,每门都要交出一个能当场演示的东西。交不出来,不算完成。</p>
+  </div>
+</section>
+
+<!-- ===== 首场工作坊 ===== -->
+<section class="u1000-sec u1000-sec--alt">
+  <div class="u1000-inner">
+    <p class="u1000-label" data-i18n="u1000.first.label">FIRST WORKSHOP · 首场</p>
+    <h2 class="u1000-title" data-i18n="u1000.first.title">第一课,先把智能体连上你自己的数据</h2>
+
+    <div class="u1000-first reveal">
+      <div class="u1000-first-main">
+        <p class="u1000-first-cat mono" data-i18n="u1000.first.cat">WORKSHOP 01 · 电商订单场景</p>
+        <h3 data-i18n="u1000.first.h3">让智能体连上你的数据库与订单</h3>
+        <p data-i18n="u1000.first.p">半天时间,从一张订单表开始,把智能体接到真实数据库上。不预先装好环境也没关系 —— 开场 40 分钟先把环境、模型和数据库常识补齐,剩下三个多小时全在动手。</p>
+        <div class="u1000-first-flow">
+          <b data-i18n="u1000.first.flow.1">连接</b>
+          <span class="arw">→</span>
+          <b data-i18n="u1000.first.flow.2">映射</b>
+          <span class="arw">→</span>
+          <b data-i18n="u1000.first.flow.3">问数</b>
+          <span class="arw">→</span>
+          <b data-i18n="u1000.first.flow.4">可视化</b>
+        </div>
+      </div>
+      <div class="u1000-first-side">
+        <dl>
+          <div>
+            <dt data-i18n="u1000.first.s1t">你会做出</dt>
+            <dd data-i18n="u1000.first.s1d">一个能回答业务问数的数据智能体 + 一张趋势图</dd>
+          </div>
+          <div>
+            <dt data-i18n="u1000.first.s2t">时长与形式</dt>
+            <dd data-i18n="u1000.first.s2d">线下半天 4 小时 · 10–12 人</dd>
+          </div>
+          <div>
+            <dt data-i18n="u1000.first.s3t">需要准备</dt>
+            <dd data-i18n="u1000.first.s3d">一台能装 QBuilder 的电脑,会写简单 SQL 更好</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 24 门课程 ===== -->
+<section class="u1000-sec" id="curriculum">
+  <div class="u1000-inner">
+    <p class="u1000-label" data-i18n="u1000.cur.label">CURRICULUM · 课程路线</p>
+    <h2 class="u1000-title" data-i18n="u1000.cur.title">24 门课,覆盖企业最常被卡住的业务线</h2>
+    <p class="u1000-prose" data-i18n="u1000.cur.sub">按"补哪个洞"分六个阶段。每门课都有明确的动手产出 —— 带数字、可验收,不是"掌握某个概念"。</p>
+
+    <div class="u1000-stages">
+      <!-- 阶段一 -->
+      <article class="u1000-stage">
+        <div class="u1000-stage-head">
+          <span class="u1000-stage-no mono">STAGE 01</span>
+          <h3 class="u1000-stage-name" data-i18n="u1000.stage.1.name">从数据到决策</h3>
+        </div>
+        <p class="u1000-stage-why" data-i18n="u1000.stage.1.why">最先被问倒的不是"AI 会不会",而是"这个数你从哪来的"。</p>
+        <ol class="u1000-courses">
+          <li class="u1000-course is-entry">
+            <span class="u1000-course-no mono">01</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.01.n">首战工作坊:连上数据库与订单</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.01.o">数据智能体 + 趋势图</span>
+            </span>
+          </li>
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">02</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.02.n">销售与客户:从 CRM 线索到客户画像日报</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.02.o">客户智能体 + 每日画像</span>
+            </span>
+          </li>
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">03</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.03.n">经营分析:能被追问的经营驾驶舱</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.03.o">分析智能体 + 3 张核心图</span>
+            </span>
+          </li>
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">04</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.04.n">库存与补货:多仓周转与补货建议</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.04.o">补货建议 + 缺货预警</span>
+            </span>
+          </li>
+        </ol>
+      </article>
+
+      <!-- 阶段二 -->
+      <article class="u1000-stage">
+        <div class="u1000-stage-head">
+          <span class="u1000-stage-no mono">STAGE 02</span>
+          <h3 class="u1000-stage-name" data-i18n="u1000.stage.2.name">知识与服务</h3>
+        </div>
+        <p class="u1000-stage-why" data-i18n="u1000.stage.2.why">最有价值的资产不在数据库里,在手册、预案和记录里。</p>
+        <ol class="u1000-courses">
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">05</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.05.n">客服工单:知识库应答与自动分诊</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.05.o">分诊准确率 ≥80%</span>
+            </span>
+          </li>
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">06</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.06.n">制度与合规问答:手册、预案、红头文件</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.06.o">50 份文档,20 问有出处</span>
+            </span>
+          </li>
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">07</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.07.n">售后与客诉:情绪识别与闭环回访</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.07.o">客诉闭环工作流</span>
+            </span>
+          </li>
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">08</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.08.n">招投标与合同:条款比对与风险提示</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.08.o">≥8 处偏离的风险报告</span>
+            </span>
+          </li>
+        </ol>
+      </article>
+
+      <!-- 阶段三 -->
+      <article class="u1000-stage">
+        <div class="u1000-stage-head">
+          <span class="u1000-stage-no mono">STAGE 03</span>
+          <h3 class="u1000-stage-name" data-i18n="u1000.stage.3.name">流程自动化</h3>
+        </div>
+        <p class="u1000-stage-why" data-i18n="u1000.stage.3.why">单个问答只省几分钟,跨系统的长流程才省几个人。</p>
+        <ol class="u1000-courses">
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">09</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.09.n">财务对账:三单匹配与差异归因</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.09.o">匹配率 ≥90% 的对账技能</span>
+            </span>
+          </li>
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">10</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.10.n">报销与发票审核:票据识别与规则校验</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.10.o">三态审核技能 + 理由</span>
+            </span>
+          </li>
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">11</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.11.n">采购与审批:比价、多级审批、留痕</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.11.o">采购审批工作流</span>
+            </span>
+          </li>
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">12</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.12.n">人力招聘与入职:简历筛选到入职办理</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.12.o">招聘全流程技能</span>
+            </span>
+          </li>
+        </ol>
+      </article>
+
+      <!-- 阶段四 -->
+      <article class="u1000-stage">
+        <div class="u1000-stage-head">
+          <span class="u1000-stage-no mono">STAGE 04</span>
+          <h3 class="u1000-stage-name" data-i18n="u1000.stage.4.name">业务纵深</h3>
+        </div>
+        <p class="u1000-stage-why" data-i18n="u1000.stage.4.why">判断模糊、数据杂乱、牵涉多方 —— 核心业务从来不好做。</p>
+        <ol class="u1000-courses">
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">13</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.13.n">研发与产品:需求分析与技术文档</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.13.o">需求清单 + PRD 草稿</span>
+            </span>
+          </li>
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">14</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.14.n">生产与质检:异常识别与工单闭环</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.14.o">异常闭环工作流</span>
+            </span>
+          </li>
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">15</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.15.n">市场与内容:多平台生产与效果复盘</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.15.o">≥10 条可用稿件</span>
+            </span>
+          </li>
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">16</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.16.n">项目管理:周报自动生成与风险预警</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.16.o">周报 + 三项风险提示</span>
+            </span>
+          </li>
+        </ol>
+      </article>
+
+      <!-- 阶段五 -->
+      <article class="u1000-stage">
+        <div class="u1000-stage-head">
+          <span class="u1000-stage-no mono">STAGE 05</span>
+          <h3 class="u1000-stage-name" data-i18n="u1000.stage.5.name">平台化</h3>
+        </div>
+        <p class="u1000-stage-why" data-i18n="u1000.stage.5.why">一个场景是个人能力,可复用的资产才是企业能力。</p>
+        <ol class="u1000-courses">
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">17</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.17.n">私有化部署:把智能体放进企业内网</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.17.o">部署方案 + 安装记录</span>
+            </span>
+          </li>
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">18</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.18.n">技能商店:把场景沉淀成组织资产</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.18.o">2 个技能正式上架</span>
+            </span>
+          </li>
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">19</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.19.n">智空间:多渠道分发与使用分析</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.19.o">双渠道发布 + 运营解读</span>
+            </span>
+          </li>
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">20</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.20.n">权限、审计与合规:过评审会的那套材料</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.20.o">权限矩阵 + 合规清单</span>
+            </span>
+          </li>
+        </ol>
+      </article>
+
+      <!-- 阶段六 -->
+      <article class="u1000-stage">
+        <div class="u1000-stage-head">
+          <span class="u1000-stage-no mono">STAGE 06</span>
+          <h3 class="u1000-stage-name" data-i18n="u1000.stage.6.name">规模化交付</h3>
+        </div>
+        <p class="u1000-stage-why" data-i18n="u1000.stage.6.why">最后一公里从来不是技术,是集成、成本、推广和验收。</p>
+        <ol class="u1000-courses">
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">21</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.21.n">系统集成:ERP / OA / CRM / IM 打通</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.21.o">集成方案 + 联通演示</span>
+            </span>
+          </li>
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">22</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.22.n">模型与算力:本地、混合与成本控制</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.22.o">选型与成本表</span>
+            </span>
+          </li>
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">23</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.23.n">变更管理与推广:让业务真的用起来</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.23.o">90 天推广计划</span>
+            </span>
+          </li>
+          <li class="u1000-course">
+            <span class="u1000-course-no mono">24</span>
+            <span class="u1000-course-body">
+              <span class="u1000-course-name" data-i18n="u1000.c.24.n">综合实战与 FDE 认证答辩</span>
+              <span class="u1000-course-out" data-i18n="u1000.c.24.o">端到端方案 + 作品集</span>
+            </span>
+          </li>
+        </ol>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 谁该来 ===== -->
+<section class="u1000-sec u1000-sec--alt">
+  <div class="u1000-inner">
+    <p class="u1000-label" data-i18n="u1000.who.label">WHO · 谁该来</p>
+    <h2 class="u1000-title" data-i18n="u1000.who.title">四种人,同一件事:把 AI 用进真实业务</h2>
+
+    <div class="u1000-personas">
+      <article class="u1000-persona">
+        <span class="u1000-persona-tag" data-i18n="u1000.who.1.tag">BUSINESS</span>
+        <h3 data-i18n="u1000.who.1.h3">业务骨干</h3>
+        <p data-i18n="u1000.who.1.p">最懂流程哪里痛,知道什么该做、什么做了也没人用。想做,但不会开发。</p>
+      </article>
+      <article class="u1000-persona">
+        <span class="u1000-persona-tag" data-i18n="u1000.who.2.tag">DATA</span>
+        <h3 data-i18n="u1000.who.2.h3">数据与分析</h3>
+        <p data-i18n="u1000.who.2.p">手上有一堆表和看板,但答不出业务真正想问的问题,天天被追问口径。</p>
+      </article>
+      <article class="u1000-persona">
+        <span class="u1000-persona-tag" data-i18n="u1000.who.3.tag">IT</span>
+        <h3 data-i18n="u1000.who.3.h3">IT 与架构</h3>
+        <p data-i18n="u1000.who.3.p">要做选型、部署、权限和评审材料,不想再被业务绕过自己接一堆野工具。</p>
+      </article>
+      <article class="u1000-persona">
+        <span class="u1000-persona-tag" data-i18n="u1000.who.4.tag">DELIVERY</span>
+        <h3 data-i18n="u1000.who.4.h3">咨询与实施</h3>
+        <p data-i18n="u1000.who.4.p">要给客户交付 AI 方案,但每次都在重造轮子,缺一套能复用、能验收的方法。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 你将得到 ===== -->
+<section class="u1000-sec">
+  <div class="u1000-inner">
+    <p class="u1000-label" data-i18n="u1000.get.label">WHAT YOU GET · 你将得到</p>
+    <h2 class="u1000-title" data-i18n="u1000.get.title">五项支持,陪你从第一课走到认证</h2>
+
+    <div class="u1000-items">
+      <article class="u1000-item">
+        <span class="u1000-item-tag" data-i18n="u1000.get.1.tag">P1 · 课程</span>
+        <h3 data-i18n="u1000.get.1.h3">24 门场景工作坊</h3>
+        <p data-i18n="u1000.get.1.p">六阶段,从数据问答到私有化部署,每门都是一条完整业务流程。</p>
+      </article>
+      <article class="u1000-item">
+        <span class="u1000-item-tag" data-i18n="u1000.get.2.tag">P2 · 教具</span>
+        <h3 data-i18n="u1000.get.2.h3">标准数据集与模板</h3>
+        <p data-i18n="u1000.get.2.p">订单数据集、映射模板、提示模板固化复用,换课不用换环境。</p>
+      </article>
+      <article class="u1000-item">
+        <span class="u1000-item-tag" data-i18n="u1000.get.3.tag">P3 · 产出</span>
+        <h3 data-i18n="u1000.get.3.h3">一份可展示的作品集</h3>
+        <p data-i18n="u1000.get.3.p">每门课的产出都是能演示的东西,走完就是你在企业里能拿出手的凭证。</p>
+      </article>
+      <article class="u1000-item">
+        <span class="u1000-item-tag" data-i18n="u1000.get.4.tag">P4 · 认证</span>
+        <h3 data-i18n="u1000.get.4.h3">FDE 认证与答辩</h3>
+        <p data-i18n="u1000.get.4.p">24 门满 + 48 小时实战 + 答辩通过,拿到认证并进入交付伙伴名录。</p>
+      </article>
+      <article class="u1000-item">
+        <span class="u1000-item-tag" data-i18n="u1000.get.5.tag">P5 · 圈子</span>
+        <h3 data-i18n="u1000.get.5.h3">实践者社群</h3>
+        <p data-i18n="u1000.get.5.p">和同批实践者一起踩坑、互换场景,课程之外仍然有人可问。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 需要做到 ===== -->
+<section class="u1000-sec u1000-sec--alt">
+  <div class="u1000-inner">
+    <p class="u1000-label" data-i18n="u1000.ask.label">WHAT WE ASK · 需要你做到</p>
+    <h2 class="u1000-title" data-i18n="u1000.ask.title">四条要求,和一条红线</h2>
+
+    <div class="u1000-items">
+      <article class="u1000-item">
+        <span class="u1000-item-tag" data-i18n="u1000.ask.1.tag">C1 · 产出</span>
+        <h3 data-i18n="u1000.ask.1.h3">每门课交一个东西</h3>
+        <p data-i18n="u1000.ask.1.p">交不出可演示的产出,这门课不计入结业,也不计入路径。</p>
+      </article>
+      <article class="u1000-item">
+        <span class="u1000-item-tag" data-i18n="u1000.ask.2.tag">C2 · 场景</span>
+        <h3 data-i18n="u1000.ask.2.h3">带真实业务问题来</h3>
+        <p data-i18n="u1000.ask.2.p">用自己的业务问题练,不要用课程给的玩具例子交作业。</p>
+      </article>
+      <article class="u1000-item">
+        <span class="u1000-item-tag" data-i18n="u1000.ask.3.tag">C3 · 数据</span>
+        <h3 data-i18n="u1000.ask.3.h3">数据必须脱敏</h3>
+        <p data-i18n="u1000.ask.3.p">涉及客户信息、财务数据的,先脱敏再带进课堂。这条没有例外。</p>
+      </article>
+      <article class="u1000-item">
+        <span class="u1000-item-tag" data-i18n="u1000.ask.4.tag">C4 · 答辩</span>
+        <h3 data-i18n="u1000.ask.4.h3">认证要现场答辩</h3>
+        <p data-i18n="u1000.ask.4.p">评审看四件事:能不能用、治理是否闭环、是否可复用、讲不讲得清楚。</p>
+      </article>
+      <article class="u1000-item is-red">
+        <span class="u1000-item-tag" data-i18n="u1000.ask.5.tag">C5 · 红线</span>
+        <h3 data-i18n="u1000.ask.5.h3">交不出即未完成</h3>
+        <p data-i18n="u1000.ask.5.p">我们不发"上完课"的证书。结业标准只有一条:你做出了能跑的东西。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 时间节奏 ===== -->
+<section class="u1000-sec">
+  <div class="u1000-inner">
+    <p class="u1000-label" data-i18n="u1000.tl.label">TIMELINE · 时间节奏</p>
+    <h2 class="u1000-title" data-i18n="u1000.tl.title">分三期跑,不一次铺满 24 门</h2>
+
+    <div class="u1000-phases">
+      <article class="u1000-phase is-current">
+        <span class="u1000-phase-no" data-i18n="u1000.tl.1.no">第一期 · 开放报名</span>
+        <h3 data-i18n="u1000.tl.1.h3">首战工作坊 · 01</h3>
+        <p class="u1000-phase-meta" data-i18n="u1000.tl.1.meta">线下半天 · 每月 2 场</p>
+        <p data-i18n="u1000.tl.1.p">先跑通"连接 → 映射 → 问数 → 可视化",确认这条路对你的业务成立,再决定要不要走完二十四门。</p>
+      </article>
+      <article class="u1000-phase">
+        <span class="u1000-phase-no" data-i18n="u1000.tl.2.no">第二期 · 逐门铺开</span>
+        <h3 data-i18n="u1000.tl.2.h3">业务场景课 · 02–16</h3>
+        <p class="u1000-phase-meta" data-i18n="u1000.tl.2.meta">每月 4 场 · 约 9 个月</p>
+        <p data-i18n="u1000.tl.2.p">数据、知识、流程、纵深四段依次铺开,每门都带一个能当场验收的产出。</p>
+      </article>
+      <article class="u1000-phase">
+        <span class="u1000-phase-no" data-i18n="u1000.tl.3.no">第三期 · 平台与认证</span>
+        <h3 data-i18n="u1000.tl.3.h3">部署、运营与答辩 · 17–24</h3>
+        <p class="u1000-phase-meta" data-i18n="u1000.tl.3.meta">约 3 个月 · 含 48 小时实战</p>
+        <p data-i18n="u1000.tl.3.p">把场景变成企业级能力,最后用一次端到端交付完成认证。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 联系 ===== -->
+<section class="section contact" id="signup">
+  <div class="container contact-inner">
+    <div class="contact-copy reveal">
+      <p class="sec-index mono" data-i18n="u1000.cta.label">SIGN UP · 报名</p>
+      <h2 class="contact-title" data-i18n="u1000.cta.title">从首场工作坊开始,<br><em>先做出一个东西</em></h2>
+      <p class="contact-sub" data-i18n="u1000.cta.sub">首战工作坊每月两场,单场 10–12 人。留下你的行业和想解决的问题,我们会按场景匹配场次。</p>
+      <ul class="contact-list">
+        <li data-i18n="u1000.cta.l1"><b>报名首场</b>说明行业与想解决的业务问题</li>
+        <li data-i18n="u1000.cta.l2"><b>匹配场次</b>按场景相近原则安排同场伙伴</li>
+        <li data-i18n="u1000.cta.l3"><b>当天出产出</b>离场时带走一个能演示的智能体</li>
+      </ul>
+    </div>
+    <div class="contact-channels reveal d1">
+      <div class="channel-card">
+        <span class="mono channel-label" data-i18n="u1000.ch1.label">WECHAT · 微信咨询</span>
+        <p class="channel-desc" data-i18n="u1000.ch1.desc">搜索添加,备注「U1000」</p>
+        <div class="channel-value">
+          <b>yhc-startup</b>
+          <button class="btn btn-line btn-sm copy-btn" data-copy="yhc-startup" data-tip-key="wechat" data-i18n="ch.btn">复制</button>
+        </div>
+      </div>
+      <div class="channel-card">
+        <span class="mono channel-label" data-i18n="u1000.ch2.label">EMAIL · 邮件沟通</span>
+        <p class="channel-desc" data-i18n="u1000.ch2.desc">说明行业、团队规模与想解决的问题,1 个工作日内回复</p>
+        <div class="channel-value">
+          <b>ceo@quseit.com</b>
+          <button class="btn btn-line btn-sm copy-btn" data-copy="ceo@quseit.com" data-tip-key="email" data-i18n="ch.btn">复制</button>
+        </div>
+      </div>
+      <p class="channel-tip" id="copyTip" data-i18n="u1000.ch.tip">U1000 为普惠计划,与企业 FDE 培训为两条独立业务</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="logo.svg" alt="QAgent Logo" class="brand-logo">
+      <div>
+        <b> QUSEIT Agent (QAgent) </b>
+        <p data-i18n="footer.slogan">让 AI 智能体成为每个员工的「数字同事」</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html#values" data-i18n="nav.values">核心价值</a>
+      <a href="index.html#product" data-i18n="nav.product">产品架构</a>
+      <a href="index.html#deploy" data-i18n="nav.deploy">部署方式</a>
+      <a href="index.html#pricing" data-i18n="nav.pricing">价格</a>
+      <a href="cases/index.html" data-i18n="nav.cases">应用场景</a>
+      <a href="fde.html" data-i18n="nav.fde">FDE 培训</a>
+      <a href="1000-fdes.html" data-i18n="u1000.footer.link">U1000 计划</a>
+      <a href="partner.html" data-i18n="nav.partners">合作伙伴</a>
+    </div>
+    <p class="footer-copy mono">© 2026 QUSEIT · ENTERPRISE AGENT SOLUTION</p>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

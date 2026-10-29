@@ -1,0 +1,236 @@
+/* ===== U1000 · FDE 实践者赋能计划(campaign 页) =====
+   版式参考 quseit-website/100-creators.html:
+   面包屑 → kicker → 窄栏标题 → 状态条 → 每节 mono 标签 + serif 标题 + 限宽正文
+   → 卡片网格 / 三阶段时间轴 → 底部 CTA。
+   视觉沿用企业版 token(深色 hero、serif 900 标题、硬偏移投影)。
+   类名统一 u1000- 前缀,避免影响其它页面。 */
+
+/* ---------- Hero ---------- */
+.u1000-hero{padding:120px 0 64px}
+.u1000-hero-inner{display:flex;flex-direction:column;align-items:flex-start;gap:18px}
+
+.u1000-crumb{
+  display:flex;align-items:center;gap:8px;margin-bottom:6px;
+  font-family:var(--mono);font-size:12px;color:rgba(246,243,236,.55);
+}
+.u1000-crumb a{color:rgba(246,243,236,.55);transition:color .2s}
+.u1000-crumb a:hover{color:#8FB2F2}
+.u1000-crumb .sep{opacity:.5}
+.u1000-crumb .cur{color:rgba(246,243,236,.85)}
+
+.u1000-hero h1{
+  font-family:var(--serif);font-weight:900;
+  font-size:clamp(34px,4.2vw,58px);line-height:1.22;letter-spacing:.01em;
+  max-width:860px;margin:0;
+}
+.u1000-hero .u1000-sub{
+  font-size:16.5px;line-height:1.9;max-width:700px;margin:0;
+  color:rgba(246,243,236,.72);
+}
+.u1000-hero .hero-actions{margin-top:14px}
+
+/* 深色 hero 上的按钮:默认色在 --dark 上会看不见(见站点已知坑) */
+.u1000-hero .btn-solid{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.u1000-hero .btn-solid:hover{background:#fff;color:var(--ink);border-color:#fff;box-shadow:4px 4px 0 rgba(246,243,236,.28)}
+.u1000-hero .btn-line{color:var(--paper);border-color:rgba(246,243,236,.5)}
+.u1000-hero .btn-line:hover{background:var(--paper);color:var(--ink);border-color:var(--paper);box-shadow:4px 4px 0 rgba(246,243,236,.28)}
+
+/* 状态条 */
+.u1000-status{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
+.u1000-chip{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--mono);font-size:12px;letter-spacing:.06em;
+  padding:7px 14px;background:rgba(255,255,255,.05);
+  border:1px solid rgba(246,243,236,.22);color:rgba(246,243,236,.8);
+}
+.u1000-chip .num{color:#8FB2F2;font-weight:600}
+.u1000-chip.is-stage{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+
+/* ---------- 通用节 ---------- */
+.u1000-sec{padding:76px 0}
+.u1000-sec--alt{background:var(--paper-2)}
+.u1000-inner{max-width:1140px;margin:0 auto;padding:0 32px}
+
+.u1000-label{
+  font-family:var(--mono);font-size:12px;letter-spacing:.1em;
+  color:var(--accent);margin:0 0 14px;text-transform:uppercase;
+}
+.u1000-title{
+  font-family:var(--serif);font-weight:900;
+  font-size:clamp(24px,2.6vw,34px);line-height:1.3;
+  margin:0 0 22px;letter-spacing:.01em;
+}
+.u1000-prose{
+  font-size:15.5px;line-height:1.95;color:var(--ink-2);
+  margin:0 0 14px;max-width:740px;
+}
+.u1000-prose:last-child{margin-bottom:0}
+
+/* ---------- 首场工作坊 ---------- */
+.u1000-first{
+  margin-top:34px;border:1.5px solid var(--ink);background:#fff;
+  display:grid;grid-template-columns:1.15fr .85fr;
+}
+.u1000-first-main{padding:36px 38px}
+.u1000-first-cat{
+  font-family:var(--mono);font-size:11px;letter-spacing:.16em;
+  color:var(--accent);margin-bottom:14px;
+}
+.u1000-first-main h3{
+  font-family:var(--serif);font-weight:900;font-size:clamp(21px,2.2vw,28px);
+  line-height:1.35;margin:0 0 14px;
+}
+.u1000-first-main p{font-size:15px;line-height:1.85;color:var(--ink-2);margin:0}
+.u1000-first-flow{
+  margin-top:22px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;
+  font-family:var(--mono);font-size:12px;color:var(--ink-3);
+}
+.u1000-first-flow b{
+  font-weight:600;color:var(--accent);background:var(--accent-soft);
+  padding:4px 10px;
+}
+.u1000-first-flow .arw{opacity:.45}
+.u1000-first-side{
+  border-left:1.5px solid var(--ink);background:var(--paper-2);
+  padding:32px 30px;display:flex;flex-direction:column;gap:16px;justify-content:center;
+}
+.u1000-first-side dl{margin:0;display:flex;flex-direction:column;gap:14px}
+.u1000-first-side dt{
+  font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+  color:var(--ink-3);margin-bottom:4px;
+}
+.u1000-first-side dd{margin:0;font-size:15px;font-weight:600;color:var(--ink)}
+
+/* ---------- 24 门课 · 阶段网格 ---------- */
+.u1000-stages{
+  display:grid;gap:20px;margin-top:12px;
+  grid-template-columns:repeat(3,1fr);
+}
+.u1000-stage{
+  background:#fff;border:1.5px solid var(--line);
+  padding:24px 22px;display:flex;flex-direction:column;gap:14px;
+  transition:border-color .25s,box-shadow .25s,transform .25s;
+}
+.u1000-stage:hover{
+  border-color:var(--ink);transform:translateY(-3px);
+  box-shadow:8px 8px 0 var(--accent-soft);
+}
+.u1000-stage-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.u1000-stage-no{
+  font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--accent);
+}
+.u1000-stage-name{
+  font-family:var(--serif);font-weight:900;font-size:19px;line-height:1.3;margin:0;
+}
+.u1000-stage-why{
+  font-size:13px;line-height:1.7;color:var(--ink-3);margin:0;
+  padding-bottom:12px;border-bottom:1px solid var(--line);
+}
+.u1000-courses{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:13px}
+.u1000-course{display:flex;gap:11px;align-items:flex-start}
+.u1000-course-no{
+  font-family:var(--mono);font-size:11px;color:var(--ink-3);
+  padding-top:3px;flex-shrink:0;
+}
+.u1000-course-body{display:flex;flex-direction:column;gap:3px}
+.u1000-course-name{font-size:14px;line-height:1.55;color:var(--ink);font-weight:500}
+.u1000-course-out{
+  font-family:var(--mono);font-size:11px;line-height:1.6;color:var(--accent);
+}
+.u1000-course.is-entry .u1000-course-name{font-weight:700}
+.u1000-course.is-entry .u1000-course-no{color:var(--accent)}
+
+/* ---------- 谁该来 ---------- */
+.u1000-personas{
+  display:grid;gap:20px;margin-top:12px;
+  grid-template-columns:repeat(4,1fr);
+}
+.u1000-persona{
+  background:#fff;border:1.5px solid var(--line);padding:24px 22px;
+  display:flex;flex-direction:column;gap:10px;
+  transition:border-color .25s,box-shadow .25s,transform .25s;
+}
+.u1000-persona:hover{
+  border-color:var(--ink);transform:translateY(-3px);
+  box-shadow:8px 8px 0 var(--accent-soft);
+}
+.u1000-persona-tag{
+  font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--accent);
+}
+.u1000-persona h3{
+  font-family:var(--serif);font-weight:900;font-size:18px;line-height:1.35;margin:0;
+}
+.u1000-persona p{font-size:13.5px;line-height:1.8;color:var(--ink-2);margin:0}
+
+/* ---------- 你将得到 / 需要做到 ---------- */
+.u1000-items{
+  display:grid;gap:18px;margin-top:12px;
+  grid-template-columns:repeat(5,1fr);
+}
+.u1000-item{
+  background:#fff;border:1.5px solid var(--line);padding:24px 22px;
+  display:flex;flex-direction:column;gap:10px;
+  transition:border-color .25s,box-shadow .25s,transform .25s;
+}
+.u1000-item:hover{
+  border-color:var(--ink);transform:translateY(-3px);
+  box-shadow:8px 8px 0 var(--accent-soft);
+}
+.u1000-item-tag{
+  font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--accent);
+}
+.u1000-item h3{
+  font-family:var(--serif);font-weight:900;font-size:17px;line-height:1.4;margin:0;
+}
+.u1000-item p{font-size:13.5px;line-height:1.8;color:var(--ink-2);margin:0}
+.u1000-item.is-red{border-color:var(--ink);background:var(--paper-2)}
+.u1000-item.is-red .u1000-item-tag{color:var(--ink)}
+
+/* ---------- 时间节奏 ---------- */
+.u1000-phases{
+  display:grid;gap:20px;margin-top:12px;
+  grid-template-columns:repeat(3,1fr);
+}
+.u1000-phase{
+  background:#fff;border:1.5px solid var(--line);padding:26px 24px;
+  display:flex;flex-direction:column;gap:10px;
+}
+.u1000-phase.is-current{border:2px solid var(--accent);background:#fff}
+.u1000-phase-no{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;color:var(--accent);
+}
+.u1000-phase.is-current .u1000-phase-no{
+  display:inline-block;align-self:flex-start;
+  padding:3px 10px;background:var(--accent);color:#fff;
+}
+.u1000-phase h3{
+  font-family:var(--serif);font-weight:900;font-size:19px;line-height:1.35;margin:0;
+}
+.u1000-phase-meta{
+  font-family:var(--mono);font-size:12px;color:var(--ink-3);margin:0;
+}
+.u1000-phase p{font-size:13.5px;line-height:1.8;color:var(--ink-2);margin:0}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1024px){
+  .u1000-stages{grid-template-columns:repeat(2,1fr)}
+  .u1000-personas{grid-template-columns:repeat(2,1fr)}
+  .u1000-items{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:820px){
+  .u1000-hero{padding:100px 0 48px}
+  .u1000-sec{padding:56px 0}
+  .u1000-inner{padding:0 22px}
+  .u1000-first{grid-template-columns:1fr}
+  .u1000-first-side{border-left:none;border-top:1.5px solid var(--ink)}
+  .u1000-phases{grid-template-columns:1fr}
+  .u1000-items{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:640px){
+  .u1000-stages,.u1000-personas{grid-template-columns:1fr}
+  .u1000-first-main{padding:26px 22px}
+  .u1000-first-side{padding:26px 22px}
+  .u1000-hero h1{font-size:clamp(28px,7vw,36px)}
+  .u1000-chip{font-size:11px;padding:6px 11px}
+  .u1000-items{grid-template-columns:1fr}
+}
