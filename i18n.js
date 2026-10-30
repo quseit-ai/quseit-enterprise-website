@@ -1,7 +1,7 @@
 // ========== QAgent 官网国际化（默认简体中文，可切换英文） ==========
 (function () {
   const en = {
-    'meta.title': "QAgent — Make AI Agents Every Employee's Digital Colleague",
+    'meta.title': "QAgent — Make Digital Assets Every Employee's Smart Assistant",
     'meta.desc': "QAgent Enterprise Agent Solution: turn employee know-how into a private enterprise skill library, then deliver service capabilities externally through Agent Space. Privately deployable, with your own model choices.",
 
     'brand.tag': 'Enterprise Agents',
@@ -18,9 +18,9 @@
     'nav.home': 'Home',
 
     'hero.kicker': '<span class="kicker-dot"></span>ENTERPRISE AGENT SOLUTION',
-    'hero.title1': 'Make AI Agents',
+    'hero.title1': 'Digital Assets',
     'hero.title2': "Every Employee's",
-    'hero.title3': '<em>“Digital Colleague”</em>',
+    'hero.title3': '<em>“Smart Assistant”</em>',
     'hero.sub': 'Turn employee know-how into a <strong>private enterprise skill library</strong>, then deliver service capabilities externally through <strong>Agent Space</strong>.<br>Privately deployable, with your own model choices.',
     'hero.action1': 'Apply for 15-Day Free Trial',
     'hero.action2': 'Explore Core Value <span class="arrow">→</span>',

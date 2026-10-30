@@ -160,6 +160,9 @@ a{color:inherit;text-decoration:none}
   font-family:var(--serif);font-weight:900;
   font-size:clamp(40px,5.4vw,72px);line-height:1.22;letter-spacing:.01em;
 }
+/* 英文单词比中文宽：72px 下 "Every Employee's" 需 656px、"“Smart Assistant”" 需 743px,
+   都超出 616px 的文案栏宽会被拆词。英文降到 58px 可三行完整容纳。 */
+html[lang="en"] .hero-title{font-size:clamp(36px,4.6vw,58px)}
 .hero-title span{display:block}
 .hero-title em{font-style:normal;color:var(--accent);position:relative}
 .hero-sub{margin-top:28px;font-size:18px;color:var(--ink-2);line-height:1.9}
