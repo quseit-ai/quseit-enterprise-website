@@ -21,7 +21,7 @@
     'hero.title1': 'Build workflows free,',
     'hero.title2': '<em>Enterprise Agents</em>',
     'hero.title3': 'Try before you buy',
-    'hero.sub': 'Turn employee know-how into a <strong>private enterprise skill library</strong>, then deliver service capabilities externally through <strong>Agent Space</strong>.<br>Privately deployable, with your own model choices.',
+    'hero.sub': 'Build workflows free, turn know-how into a <strong>private skill library</strong>, then publish it through <strong>Agent Space</strong>.<br>Privately deployable — your <strong>data assets never leave your network</strong>.',
     'hero.action1': 'Apply for 15-Day Free Trial',
     'hero.action2': 'Explore Core Value <span class="arrow">→</span>',
     'hero.imgAlt': 'QAgent Smart Assistant',
