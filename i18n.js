@@ -253,7 +253,7 @@
     'doc.kpi4.l': 'Compliance-trace coverage',
     'doc.cta.h3': 'Want this capability <em>in your emergency document corpus?</em>',
     'doc.cta.p': '15-day SaaS trial / 1-month private POC — we integrate your plans and case histories, running on-site within 2 weeks.',
-    'doc.cta.btn1': 'Request POC',
+    'doc.cta.btn1': 'Request a Demo',
     'doc.cta.btn2': 'View more scenarios',
     'doc.pager.prev': '← Back to Use Cases',
     'doc.pager.next': 'Smart Work-Permit Filling →',
@@ -328,7 +328,7 @@
     'wp.kpi4.l': 'Permit templates covered',
     'wp.cta.h3': 'Want <em>on-site permits</em> filled without overtime?',
     'wp.cta.p': '15-day SaaS trial / 1-month private POC — we integrate your permit templates and approver list; pilot up within 2 weeks.',
-    'wp.cta.btn1': 'Request POC',
+    'wp.cta.btn1': 'Request a Demo',
     'wp.cta.btn2': 'View more scenarios',
     'wp.pager.prev': '← Smart Document Q&A Solution',
     'wp.pager.next': 'Back to Emergency Management →',
@@ -442,9 +442,9 @@
 
     'cta.h3': "Don't see your industry? <em>Tell us</em> — let's build it together.",
     'cta.p': 'Every industry has know-how worth distilling. 15-day SaaS trial or 1-month private POC — let’s turn your scenarios into reusable AI skills together.',
-    'cta.btn': 'Request Custom POC',
+    'cta.btn': 'Request a Demo',
 
-    'footer.slogan': "Make “digital assets” every employee's “smart assistant”",
+    'footer.slogan': 'Build workflows free, try before you buy',
 
     // ===== partner.html =====
     'partner.meta.title': 'Partners — QUSEIT',
@@ -775,7 +775,7 @@
     'u1000.c.24.o': "End-to-end solution + portfolio",
 
     // ===== 关于页（about.html） =====
-    'about.meta.title': "About QUSEIT Agent — Make “Digital Assets” Every Employee's “Smart Assistant”",
+    'about.meta.title': 'About QUSEIT Agent — Why Enterprises Need Their Own Agent Platform',
     'about.meta.desc': 'QAgent enterprise agent solution: turn employee experience into reusable enterprise skill assets, deploy privately so data never leaves your intranet, and own your model choice with no vendor lock-in.',
     'about.eyebrow': 'ABOUT · ABOUT QUSEIT AGENT',
     'about.title': 'Why use <em>QUSEIT Agent</em>',
@@ -813,7 +813,7 @@
     'about.company.addr.value': 'A1839, 1F, Building 1, Yard 2, Yongcheng North Road, Haidian District, Beijing',
     'about.company.website.label': 'ENTERPRISE SITE',
     'about.company.website.value': 'enterprise.quseit.com',
-    'about.company.mission': 'Make “digital assets” every employee\'s “smart assistant” — turning experience scattered across individual desks into capability the organization can reuse for years. This is what we are building.',
+    'about.company.mission': 'Turn experience scattered across individual desks into capability the organization can reuse for years — so “digital assets” truly belong to the enterprise. This is what we are building.',
   };
 
   // 复制按钮提示语
