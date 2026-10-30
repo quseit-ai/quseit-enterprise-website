@@ -431,12 +431,13 @@ html[lang="en"] .hero-title{font-size:clamp(36px,4.6vw,58px)}
   .case-row{grid-template-columns:1fr;gap:12px}
   .case-result{text-align:left}
 }
-@media(max-width:640px){
+/* 导航在 <820px 改用汉堡菜单。
+   英文导航最宽时品牌 210 + 链接 288 + 语言 40 + CTA 94 + 间距/内边距 ≈ 778px，
+   断点若停在 640，768–641 区间会横向溢出，故提到 820。 */
+@media(max-width:820px){
   .nav-links,.nav-cta{display:none}
   .nav-burger{display:flex;margin-left:0}
   .lang-switch{margin-left:auto}
-  .product-space{padding:24px 20px}
-  .product-space-list{grid-template-columns:1fr;gap:14px}
   .nav.open .nav-links{
     display:flex;position:absolute;top:68px;left:0;right:0;flex-direction:column;
     background:var(--paper);border-bottom:1.5px solid var(--ink);padding:20px 32px;gap:16px;
@@ -454,6 +455,10 @@ html[lang="en"] .hero-title{font-size:clamp(36px,4.6vw,58px)}
   .nav.open .nav-drop-menu::before{display:none}
   .nav.open .nav-drop-menu a{padding:8px 0;font-size:14px}
   .nav.open .nav-drop-menu a:hover{padding-left:4px;background:none}
+}
+@media(max-width:640px){
+  .product-space{padding:24px 20px}
+  .product-space-list{grid-template-columns:1fr;gap:14px}
   .section{padding:72px 0}
   .container{padding:0 20px}
   .price-cards,.why-grid{grid-template-columns:1fr}
