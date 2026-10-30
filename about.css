@@ -21,6 +21,8 @@
 .about-hero .learn-sub{
   margin:0;font-size:16px;line-height:1.85;color:var(--ink-2);max-width:680px;
 }
+/* 与首页 .hero-sub strong 一致的强调色，用于副标题中的关键词 */
+.about-hero .learn-sub strong{color:var(--accent);font-weight:700}
 /* 窄屏不再用主动断行，交给自动换行 */
 @media (max-width:820px){
   .about-hero h1 br{display:none}

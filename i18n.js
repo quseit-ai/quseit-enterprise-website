@@ -776,10 +776,10 @@
 
     // ===== 关于页（about.html） =====
     'about.meta.title': 'About QUSEIT Agent — Why Enterprises Need Their Own Agent Platform',
-    'about.meta.desc': 'QAgent enterprise agent solution: turn employee experience into reusable enterprise skill assets, deploy privately so data never leaves your intranet, and own your model choice with no vendor lock-in.',
+    'about.meta.desc': 'Why QUSEIT Agent: experience sits with individuals, so turn it into a reusable private enterprise skill library; privately deployable, with data assets never leaving your network.',
     'about.eyebrow': 'ABOUT · ABOUT QUSEIT AGENT',
-    'about.title': 'Why use <em>QUSEIT Agent</em>',
-    'about.subtitle': 'Turn experience scattered across individual desks into capability the organization can reuse for years — secure, visible, and under control.',
+    'about.title': 'Why use it',
+    'about.subtitle': 'Experience sits with individuals, so turn it into a <strong>private enterprise skill library</strong> the company reuses for years; <strong>data assets never leave your network</strong>.',
 
     'about.why.label': 'WHY · WHY WE BUILT THIS',
     'about.why.title': 'What stalls enterprise AI was never model intelligence',
@@ -787,7 +787,7 @@
     'about.why.p2': 'QUSEIT Agent solves all three at once: employees write skills by conversation, which are reviewed into a <b>private enterprise skill library</b> the company owns and everyone reuses; private deployment keeps data inside the network, with tenant isolation, graded permissions and full audit trails; models are chosen and procured by you, with no vendor lock-in. Once a capability works internally, it can also be published to customers and partners through <b>Agent Space</b>.',
 
     'about.diff.label': 'DIFFERENTIATION · WHAT MAKES QUSEIT DIFFERENT',
-    'about.diff.title': 'Four things we do',
+    'about.diff.title': 'Four things QUSEIT Agent does',
     'about.diff.1.num': '01 / PRIVATE SKILL LIBRARY',
     'about.diff.1.claim': 'Let AI truly understand your enterprise',
     'about.diff.1.desc': 'It answers \u201chow does your company do it\u201d, not \u201chow does this role usually do it\u201d.',
@@ -797,8 +797,8 @@
     'about.diff.2.desc': 'Skills that already work internally get published as services customers and partners can use directly.',
     'about.diff.2.foot': 'From \u201cinternal tooling\u201d to \u201cdeliverable service\u201d',
     'about.diff.3.num': '03 / LOW BARRIER',
-    'about.diff.3.claim': 'Every employee can use it',
-    'about.diff.3.desc': 'A desktop app, ready at startup, skills triggered by conversation — no prompt engineering, no backend to build.',
+    'about.diff.3.claim': 'Every employee can use it, and workflows are free to build',
+    'about.diff.3.desc': 'A desktop app, ready at startup, skills triggered by conversation — no prompt engineering, no backend to build. Get one real workflow running first, then decide whether to keep it.',
     'about.diff.3.foot': 'From \u201cusing an AI tool\u201d to \u201chaving an AI colleague\u201d',
     'about.diff.4.num': '04 / CONTROL',
     'about.diff.4.claim': 'Data and models stay in your hands',
