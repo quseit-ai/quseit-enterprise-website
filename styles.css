@@ -158,11 +158,12 @@ a{color:inherit;text-decoration:none}
 @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(28,100,217,.4)}50%{box-shadow:0 0 0 8px rgba(28,100,217,0)}}
 .hero-title{
   font-family:var(--serif);font-weight:900;
-  font-size:clamp(40px,5.4vw,72px);line-height:1.22;letter-spacing:.01em;
+  font-size:clamp(40px,4.9vw,68px);line-height:1.22;letter-spacing:.01em;
 }
-/* 英文单词比中文宽：72px 下 "Every Employee's" 需 656px、"“Smart Assistant”" 需 743px,
-   都超出 616px 的文案栏宽会被拆词。英文降到 58px 可三行完整容纳。 */
-html[lang="en"] .hero-title{font-size:clamp(36px,4.6vw,58px)}
+/* 英文单词比中文宽：68px 下 "“Smart Assistant”" 需 691px、"“Digital Assets”," 需 638px，
+   都超出 616px 的文案栏宽会被拆词。实测 60px 是仍能三行完整容纳的最大字号（610px），
+   62px 即溢出；下限取 34px，使 390px 窄屏下该短语仍单行（350px 栏宽需 34px）。 */
+html[lang="en"] .hero-title{font-size:clamp(34px,4.3vw,60px)}
 .hero-title span{display:block}
 .hero-title em{font-style:normal;color:var(--accent);position:relative}
 .hero-sub{margin-top:28px;font-size:18px;color:var(--ink-2);line-height:1.9}
