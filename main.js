@@ -74,15 +74,20 @@ const demoModal = document.getElementById('demoModal');
 const demoFrame = document.getElementById('demoFrame');
 document.querySelectorAll('.demo-open').forEach(btn => btn.addEventListener('click', e => {
   e.preventDefault();
+  if (!demoModal || !demoFrame) return;
   if (!demoFrame.src) demoFrame.src = demoFrame.dataset.src; // 首次打开才加载
   demoModal.classList.add('open');
   document.body.style.overflow = 'hidden';
 }));
 const closeDemo = () => {
+  if (!demoModal) return;
   demoModal.classList.remove('open');
   document.body.style.overflow = '';
 };
-demoModal.addEventListener('click', e => { if (e.target === demoModal) closeDemo(); });
+// fde.html / 1000-fdes.html 没有演示弹窗，需容错
+if (demoModal) {
+  demoModal.addEventListener('click', e => { if (e.target === demoModal) closeDemo(); });
+}
 addEventListener('keydown', e => { if (e.key === 'Escape') closeDemo(); });
 
 // 复制联系方式（支持中英双语提示）

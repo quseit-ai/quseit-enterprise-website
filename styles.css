@@ -20,6 +20,8 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
+/* 顶部导航是 position:fixed(高 68px)，锚点跳转时给目标留出导航高度 */
+section[id]{scroll-margin-top:68px}
 body{
   background:var(--paper);
   color:var(--ink);
