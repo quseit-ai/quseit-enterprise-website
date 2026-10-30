@@ -778,7 +778,7 @@
     'about.meta.title': "About QUSEIT Agent — Make AI Agents Every Employee's Digital Colleague",
     'about.meta.desc': 'QAgent enterprise agent solution: turn employee experience into reusable enterprise skill assets, deploy privately so data never leaves your intranet, and own your model choice with no vendor lock-in.',
     'about.eyebrow': 'ABOUT · ABOUT QUSEIT AGENT',
-    'about.title': "The dividing line isn't model strength<br><em>— it's whether AI knows your company</em>",
+    'about.title': 'Why use <em>QUSEIT Agent</em>',
     'about.subtitle': 'Turn experience scattered across individual desks into capability the organization can reuse for years — secure, visible, and under control.',
 
     'about.why.label': 'WHY · WHY WE BUILT THIS',
