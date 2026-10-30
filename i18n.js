@@ -18,9 +18,9 @@
     'nav.home': 'Home',
 
     'hero.kicker': '<span class="kicker-dot"></span>ENTERPRISE AGENT SOLUTION',
-    'hero.title1': '<em>“Digital Assets”</em>,',
-    'hero.title2': "Every Employee's",
-    'hero.title3': '<em>“Smart Assistant”</em>',
+    'hero.title1': 'Build workflows free,',
+    'hero.title2': '<em>Enterprise Agents</em>',
+    'hero.title3': 'Try before you buy',
     'hero.sub': 'Turn employee know-how into a <strong>private enterprise skill library</strong>, then deliver service capabilities externally through <strong>Agent Space</strong>.<br>Privately deployable, with your own model choices.',
     'hero.action1': 'Apply for 15-Day Free Trial',
     'hero.action2': 'Explore Core Value <span class="arrow">→</span>',
