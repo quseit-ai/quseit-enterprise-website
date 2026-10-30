@@ -178,14 +178,25 @@ html[lang="en"] .hero-title{font-size:clamp(29px,3.6vw,52px)}
   transform:rotate(1.2deg);transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s;
 }
 .hero-figure:hover{transform:rotate(0);box-shadow:14px 14px 0 var(--accent)}
-.hero-figure img{width:100%;aspect-ratio:4/3.4;object-fit:cover}
-.hero-caption{display:flex;justify-content:space-between;gap:12px;padding:12px 4px 2px;font-size:13px;color:var(--ink-2)}
-.hero-caption .mono{color:var(--accent);font-size:11px}
-.hero-diamonds{position:absolute;inset:0;pointer-events:none}
+.hero-figure img{width:100%;aspect-ratio:4/3.4;object-fit:cover;display:block}
+/* 图注排版：FIG.01 靠左，说明文字靠右。
+   说明文字原为裸文本节点，flex 下靠右不可靠，改为独立 span 明确右对齐。 */
+.hero-caption{
+  display:flex;justify-content:space-between;align-items:baseline;gap:16px;
+  padding:12px 4px 2px;font-size:13px;color:var(--ink-2);
+}
+.hero-caption .mono{color:var(--accent);font-size:11px;flex:none}
+.hero-caption .cap-text{
+  text-align:right;line-height:1.5;
+}
+.hero-diamonds{position:absolute;inset:0;pointer-events:none;z-index:2}
 .hd{position:absolute;border-radius:7px;transform:rotate(45deg);box-shadow:0 10px 24px rgba(22,19,14,.18)}
+/* 三个方块都锚在图片区，不覆盖图注文字。
+   .hd-blue 原 bottom:-24px 会压住图注文字尾部（实测压住「上线」两字），
+   改为 bottom:-64px 让它落到卡片下边框之外，完全避开图注行。 */
 .hd-red{width:34px;height:34px;background:var(--c-red);top:-30px;right:52px;animation:float 5s ease-in-out infinite}
 .hd-green{width:22px;height:22px;background:var(--c-green);top:38%;left:-34px;animation:float 6s ease-in-out .8s infinite}
-.hd-blue{width:44px;height:44px;background:var(--c-blue);bottom:-24px;right:-20px;animation:float 7s ease-in-out 1.5s infinite}
+.hd-blue{width:44px;height:44px;background:var(--c-blue);bottom:-64px;right:-20px;animation:float 7s ease-in-out 1.5s infinite}
 @keyframes float{0%,100%{transform:rotate(45deg) translateY(0)}50%{transform:rotate(45deg) translateY(-14px)}}
 
 /* ===== 通用 Section ===== */

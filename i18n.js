@@ -25,7 +25,7 @@
     'hero.action1': 'Apply to Build a Workflow',
     'hero.action2': 'See the three capabilities <span class="arrow">→</span>',
     'hero.imgAlt': 'QAgent Smart Assistant',
-    'hero.caption': '<span class="mono">FIG.01</span> Your first workflow goes live today',
+    'hero.caption': '<span class="mono">FIG.01</span> <span class="cap-text">Your first workflow goes live today</span>',
 
     'values.title': 'Three Core Values<br><span class="sec-sub">From employee know-how, to enterprise assets, to external services</span>',
     'v1.h3': 'Private Enterprise Skill Library',
