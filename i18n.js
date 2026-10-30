@@ -1,8 +1,8 @@
 // ========== QAgent 官网国际化（默认简体中文，可切换英文） ==========
 (function () {
   const en = {
-    'meta.title': "QAgent — Make Digital Assets Every Employee's Smart Assistant",
-    'meta.desc': "QAgent Enterprise Agent Solution: turn employee know-how into a private enterprise skill library, then deliver service capabilities externally through Agent Space. Privately deployable, with your own model choices.",
+    'meta.title': 'QUSEIT — Build workflows free, try before you buy',
+    'meta.desc': "QUSEIT Agent enterprise agent solution: build workflows free, turn know-how into a private enterprise skill library, then publish it through Agent Space. Privately deployable — your data assets never leave your network.",
 
     'brand.tag': 'Enterprise Agents',
     'nav.services': 'Services',
