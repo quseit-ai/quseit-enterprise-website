@@ -11,7 +11,7 @@
     'nav.deploy': 'Deployment',
     'nav.pricing': 'Pricing',
     'nav.cases': 'Use Cases',
-    'nav.fde': 'FDE Training',
+    'nav.fde': 'FDE',
     'nav.partners': 'Partners',
     'nav.about': 'Why QUSEIT',
     'nav.trial': 'Request Demo',
