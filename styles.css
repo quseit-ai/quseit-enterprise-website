@@ -245,6 +245,19 @@ a{color:inherit;text-decoration:none}
 }
 .feature-list li b{display:block;color:var(--paper);font-size:15px;margin-bottom:2px}
 .panel-foot{margin-top:26px;font-size:13px;font-weight:700;color:var(--accent);border-top:1px dashed var(--dark-line);padding-top:18px}
+/* 智空间：产品架构第三条主线，跨两栏全宽 */
+.product-space{
+  margin-top:28px;border:1.5px solid var(--dark-line);background:var(--dark-2);
+  padding:32px 36px;display:grid;grid-template-columns:1fr 1.6fr;gap:36px;align-items:center;
+  transition:border-color .35s;
+}
+.product-space:hover{border-color:var(--accent)}
+.product-space-top .panel-label{margin-bottom:14px}
+.product-space-top h3{font-family:var(--serif);font-weight:900;font-size:24px;margin-bottom:6px}
+.product-space-top p{color:#9a927f;font-size:14px}
+.product-space-list{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.product-space-list div{font-size:13.5px;color:#b5ad9c}
+.product-space-list b{display:block;color:var(--paper);font-size:14.5px;margin-bottom:4px}
 
 /* ===== 部署 ===== */
 .deploy-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
@@ -404,6 +417,7 @@ a{color:inherit;text-decoration:none}
   .hero-visual{max-width:520px}
   .value-cards{grid-template-columns:1fr}
   .product-grid,.deploy-grid,.contact-inner{grid-template-columns:1fr}
+  .product-space{grid-template-columns:1fr;gap:24px}
   .price-cards{grid-template-columns:repeat(2,1fr)}
   .why-grid{grid-template-columns:repeat(2,1fr)}
   .why-item:nth-child(3n){border-right:1px solid var(--line)}
@@ -418,6 +432,8 @@ a{color:inherit;text-decoration:none}
   .nav-links,.nav-cta{display:none}
   .nav-burger{display:flex;margin-left:0}
   .lang-switch{margin-left:auto}
+  .product-space{padding:24px 20px}
+  .product-space-list{grid-template-columns:1fr;gap:14px}
   .nav.open .nav-links{
     display:flex;position:absolute;top:68px;left:0;right:0;flex-direction:column;
     background:var(--paper);border-bottom:1.5px solid var(--ink);padding:20px 32px;gap:16px;
