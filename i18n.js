@@ -18,7 +18,7 @@
     'nav.home': 'Home',
 
     'hero.kicker': '<span class="kicker-dot"></span>ENTERPRISE AGENT SOLUTION',
-    'hero.title1': 'Digital Assets',
+    'hero.title1': '<em>“Digital Assets”</em>,',
     'hero.title2': "Every Employee's",
     'hero.title3': '<em>“Smart Assistant”</em>',
     'hero.sub': 'Turn employee know-how into a <strong>private enterprise skill library</strong>, then deliver service capabilities externally through <strong>Agent Space</strong>.<br>Privately deployable, with your own model choices.',
