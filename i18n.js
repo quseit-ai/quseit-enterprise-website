@@ -814,6 +814,55 @@
     'about.company.website.label': 'ENTERPRISE SITE',
     'about.company.website.value': 'enterprise.quseit.com',
     'about.company.mission': 'Turn experience scattered across individual desks into capability the organization can reuse for years — so "digital assets" truly belong to the enterprise. This is what we are building.',
+
+    // ===== privacy.html =====
+    'nav.privacy': 'Privacy Policy',
+    'privacy.meta.title': 'Privacy Policy — QUSEIT Enterprise Agents',
+    'privacy.meta.desc': 'How the QUSEIT enterprise agent site collects, uses and protects information, and the choices you have.',
+    'privacy.title': 'QUSEIT Enterprise Agent Privacy Policy',
+    'privacy.updated': 'LAST UPDATED · 2026-10-30',
+    'privacy.intro1': 'This privacy policy (the "Policy") explains what information QUSEIT ("we", "us") may collect, use and protect when you visit the QUSEIT enterprise agent website (the "Site"), and the choices and rights you have. The Site is a product introduction and inquiry entry point; it offers no online account registration or content authoring.',
+    'privacy.intro2': 'The Site is offered in two deployment modes: a public SaaS edition and a private custom edition. The private edition deploys the entire system inside your own intranet or private cloud, and its data processing is governed by the service contract signed with QUSEIT. This Policy covers the Site itself only.',
+    'privacy.h.information': 'What information we collect',
+    'privacy.h.information.p1': 'Information we collect falls into two categories: what you provide when you contact us, and anonymous statistics collected automatically as you browse.',
+    'privacy.h.information.l1': '<strong>Information you provide</strong>: when you reach us through the "Request a Demo" form, WeChat or email, we receive the contact details and requirement description you submit (for example company size and the scenarios you care about). This is used only to answer your inquiry and prepare a proposal.',
+    'privacy.h.information.l2': '<strong>Anonymous usage statistics</strong>: after you consent under "Analytics and Cookies" below, we use Baidu Tongji and Google Analytics 4 to collect page views, traffic sources, device type, time on page and scroll depth. This data contains no name, contact detail or company information.',
+    'privacy.h.information.l3': '<strong>Local storage</strong>: your language preference (Chinese / English) and the analytics consent state are stored in your browser\'s localStorage. This data never leaves your device and cannot be used to identify you.',
+    'privacy.h.usage': 'How we use the information',
+    'privacy.h.usage.l1': 'Respond to your inquiry, arrange product demonstrations, trials and quotes.',
+    'privacy.h.usage.l2': 'Understand how each section of the Site is used, and improve the content structure and product messaging.',
+    'privacy.h.usage.l3': 'Identify which channels bring in qualified enterprise inquiries.',
+    'privacy.h.usage.l4': 'Maintain site availability and security, and investigate abnormal traffic.',
+    'privacy.h.usage.note': 'We do not use your inquiry information for automated marketing decisions, and we do not sell or rent your contact details.',
+    'privacy.h.share': 'Who we share it with',
+    'privacy.h.share.p1': 'Except in the following cases, we do not disclose the information you provide to third parties:',
+    'privacy.h.share.l1': 'With your separate consent.',
+    'privacy.h.share.l2': 'As required by law, or by a court or administrative authority.',
+    'privacy.h.share.l3': 'As necessary to protect our rights or those of others, provided we have met our notification obligations.',
+    'privacy.h.share.p2': 'Analytics are provided by Baidu Tongji and Google Analytics, which process anonymous statistics on their own servers. Your inquiry information is not shared with them.',
+    'privacy.h.analytics': 'Analytics and cookies',
+    'privacy.h.analytics.p1': 'The Site uses two analytics channels: Baidu Tongji for Mainland China traffic, and Google Analytics 4 for overseas traffic. We use Google\'s Consent Mode v2 — no storage cookies are written before you consent, and only a cookieless page view is recorded.',
+    'privacy.h.analytics.l1': '<strong>After you accept</strong>: full collection via Baidu Tongji and GA4 is enabled, including scroll depth and button-click events.',
+    'privacy.h.analytics.l2': '<strong>After you reject</strong>: a cookieless page view is still counted and no cookies are written. Site features are unaffected.',
+    'privacy.h.analytics.l3': '<strong>Changing your choice</strong>: clear this site\'s localStorage and revisit, and the choice prompt will appear again so you can decide afresh.',
+    'privacy.h.deployment': 'Deployment and data security',
+    'privacy.h.deployment.p1': 'For private custom deployments, data never leaves your intranet or private cloud; tenants are physically isolated and every operation is logged for audit. QUSEIT does not provide model services — you may choose a public cloud model or deploy your own, avoiding vendor lock-in. The Site itself carries no enterprise business data.',
+    'privacy.h.security': 'Data security',
+    'privacy.h.security.p1': 'We apply necessary technical and organisational measures to protect your information from unauthorised access, disclosure or alteration. Statistics are transmitted over encrypted connections. Information you submit through the "Request a Demo" form is stored on Feishu (ByteDance); its data security is covered by that platform\'s own safeguards.',
+    'privacy.h.rights': 'Your rights and choices',
+    'privacy.h.rights.p1': 'Where permitted by law, you may at any time ask us to access, correct or delete your contact information, or withdraw consent previously given. Contact us through any channel below and we will act within a reasonable period. For analytics cookies, you can clear them in your browser settings or make the choice again as described above.',
+    'privacy.h.thirdparty': 'Third-party links',
+    'privacy.h.thirdparty.p1': 'The Site links to other websites (such as the creator platform agent.quseit.com and the enterprise site enterprise.quseit.com). Those sites are operated by their own operators and their privacy practices are not covered by this Policy. We are not responsible for the content or data handling of third-party sites.',
+    'privacy.h.minors': 'Minors',
+    'privacy.h.minors.p1': 'The Site is intended for business customers and is not directed at minors. We do not knowingly collect personal information from minors. If you are below the age of legal majority, please contact us through your guardian or your organisation.',
+    'privacy.h.changes': 'Changes to this policy',
+    'privacy.h.changes.p1': 'We may update this policy as our business and applicable regulations evolve. The updated version will be published on this page with a new last-updated date. We will notify you through reasonable means if a change is material.',
+    'privacy.h.contact': 'Contact us',
+    'privacy.h.contact.p1': 'If you have any question about this policy or how we handle your information, please reach us via:',
+    'privacy.h.contact.l1': '<strong>Operator</strong>: Beijing Youqu Tianxia Information Technology Co., Ltd.',
+    'privacy.h.contact.l2': '<strong>Email</strong>: ceo@quseit.com (reply within 1 business day)',
+    'privacy.h.contact.l3': '<strong>WeChat</strong>: yhc-startup (mention "QUSEIT")',
+    'privacy.h.contact.l4': '<strong>Postal address</strong>: A1839, 1F, Building 1, Yard 2, Yongcheng North Road, Haidian District, Beijing',
   };
 
   // 复制按钮提示语
@@ -870,6 +919,8 @@
       : zhDesc;
     btn.textContent = l === 'en' ? '中文' : 'EN';
     localStorage.setItem('qagent-lang', l);
+    // 供 analytics.js 监听语言切换
+    window.dispatchEvent(new CustomEvent('quseit:lang', { detail: { lang: l } }));
   }
 
   btn.addEventListener('click', () => apply(lang === 'en' ? 'zh' : 'en'));
@@ -878,7 +929,8 @@
   window.QI18N = {
     tip: key => tips[key][lang],
     copied: () => copiedLabel[lang],
-    copyLabel: () => (lang === 'en' ? 'Copy' : '复制')
+    copyLabel: () => (lang === 'en' ? 'Copy' : '复制'),
+    current: () => lang
   };
 
   if (lang === 'en') apply('en');
