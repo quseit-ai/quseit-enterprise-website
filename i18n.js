@@ -24,7 +24,7 @@
     'hero.sub': 'Turn employee know-how into a <strong>private enterprise skill library</strong>, then deliver service capabilities externally through <strong>Agent Space</strong>.<br>Privately deployable, with your own model choices.',
     'hero.action1': 'Apply for 15-Day Free Trial',
     'hero.action2': 'Explore Core Value <span class="arrow">→</span>',
-    'hero.imgAlt': 'QAgent Digital Colleague',
+    'hero.imgAlt': 'QAgent Smart Assistant',
     'hero.caption': '<span class="mono">FIG.01</span> Your next colleague may already be online',
 
     'values.title': 'Three Core Values<br><span class="sec-sub">From employee know-how, to enterprise assets, to external services</span>',
@@ -444,7 +444,7 @@
     'cta.p': 'Every industry has know-how worth distilling. 15-day SaaS trial or 1-month private POC — let’s turn your scenarios into reusable AI skills together.',
     'cta.btn': 'Request Custom POC',
 
-    'footer.slogan': "Make AI agents every employee's “digital colleague”",
+    'footer.slogan': "Make “digital assets” every employee's “smart assistant”",
 
     // ===== partner.html =====
     'partner.meta.title': 'Partners — QUSEIT',
@@ -775,7 +775,7 @@
     'u1000.c.24.o': "End-to-end solution + portfolio",
 
     // ===== 关于页（about.html） =====
-    'about.meta.title': "About QUSEIT Agent — Make AI Agents Every Employee's Digital Colleague",
+    'about.meta.title': "About QUSEIT Agent — Make “Digital Assets” Every Employee's “Smart Assistant”",
     'about.meta.desc': 'QAgent enterprise agent solution: turn employee experience into reusable enterprise skill assets, deploy privately so data never leaves your intranet, and own your model choice with no vendor lock-in.',
     'about.eyebrow': 'ABOUT · ABOUT QUSEIT AGENT',
     'about.title': 'Why use <em>QUSEIT Agent</em>',
@@ -813,7 +813,7 @@
     'about.company.addr.value': 'A1839, 1F, Building 1, Yard 2, Yongcheng North Road, Haidian District, Beijing',
     'about.company.website.label': 'ENTERPRISE SITE',
     'about.company.website.value': 'enterprise.quseit.com',
-    'about.company.mission': 'Make AI agents the \u201cdigital colleague\u201d of every employee, and turn the experience scattered across individual desks into capability the organization can reuse for years — this is what we are building.',
+    'about.company.mission': 'Make “digital assets” every employee\'s “smart assistant” — turning experience scattered across individual desks into capability the organization can reuse for years. This is what we are building.',
   };
 
   // 复制按钮提示语
