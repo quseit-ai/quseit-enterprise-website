@@ -57,42 +57,6 @@
 .about-prose b{color:var(--ink);font-weight:700}
 .about-prose em{font-style:normal;color:var(--accent);font-weight:700}
 
-/* 三个真问题 */
-.about-pains{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:0;
-  border:1.5px solid var(--ink);background:#fff;margin-top:8px;
-}
-.about-pain{padding:24px 20px;border-right:1px solid var(--line)}
-.about-pain:last-child{border-right:none}
-.about-pain-num{
-  font-family:var(--mono);font-size:12px;letter-spacing:.15em;color:var(--accent);
-  display:block;margin-bottom:12px;
-}
-.about-pain h3{font-family:var(--serif);font-weight:900;font-size:19px;line-height:1.45;margin-bottom:10px}
-.about-pain p{font-size:14px;line-height:1.85;color:var(--ink-2)}
-
-/* 三个解法 */
-.about-answers{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:8px}
-.about-answer{
-  background:#fff;border:1.5px solid var(--ink);padding:24px 20px;
-  box-shadow:6px 6px 0 var(--accent-soft);
-  transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s;
-}
-.about-answer:hover{transform:translate(-4px,-4px);box-shadow:10px 10px 0 var(--accent)}
-.about-answer-tag{
-  font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--accent);
-  display:block;margin-bottom:12px;
-}
-.about-answer h3{font-family:var(--serif);font-weight:900;font-size:19px;line-height:1.45;margin-bottom:12px}
-.about-answer p{font-size:14px;line-height:1.85;color:var(--ink-2)}
-
-/* 判断句 */
-.about-verdict{
-  margin-top:36px;padding:24px 28px;background:var(--ink);color:var(--paper);
-  border-left:4px solid var(--accent);font-size:16px;line-height:1.85;
-}
-.about-verdict b{color:#8FB2F2}
-
 /* ===== 四张差异卡 ===== */
 .about-diffs{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:8px}
 .about-diff{
@@ -109,15 +73,7 @@
   font-family:var(--serif);font-weight:900;font-size:19px;line-height:1.4;
   margin-bottom:14px;color:var(--ink);
 }
-.about-diff-desc{font-size:14.5px;line-height:1.85;color:var(--ink-2);margin-bottom:18px}
-.about-diff ul{list-style:none;margin-bottom:18px}
-.about-diff li{
-  font-size:14px;color:var(--ink-2);padding:6px 0 6px 22px;position:relative;
-}
-.about-diff li::before{
-  content:"";position:absolute;left:0;top:13px;width:8px;height:8px;
-  background:var(--accent-soft);border:1.5px solid var(--accent);
-}
+.about-diff-desc{font-size:14.5px;line-height:1.85;color:var(--ink-2);margin-bottom:20px}
 .about-diff-foot{
   margin-top:auto;padding-top:16px;border-top:1px dashed var(--line);
   font-size:13px;font-weight:700;color:var(--accent);
@@ -141,29 +97,16 @@
   font-size:16px;line-height:1.8;color:var(--ink-2);
 }
 
-/* ===== 服务 ===== */
-.about-services{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:1.5px solid var(--ink);background:#fff}
-.about-service{
-  padding:26px 28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);
-}
-.about-service:nth-child(2n){border-right:none}
-.about-service:nth-child(n+3){border-bottom:none}
-.about-service h3{font-family:var(--serif);font-weight:900;font-size:19px;margin-bottom:8px}
-.about-service p{font-size:14px;line-height:1.8;color:var(--ink-2)}
-
 /* ===== 响应式 ===== */
 @media (max-width:1024px){
-  .about-pains,.about-answers,.about-company{grid-template-columns:1fr}
-  .about-pain{border-right:none;border-bottom:1px solid var(--line)}
-  .about-pain:last-child{border-bottom:none}
   .about-diffs{grid-template-columns:1fr}
-  .about-services{grid-template-columns:1fr}
-  .about-service{border-right:none;border-bottom:1px solid var(--line)!important}
-  .about-service:last-child{border-bottom:none!important}
+}
+@media (max-width:820px){
+  .about-company{grid-template-columns:1fr}
 }
 @media (max-width:640px){
   .about-hero{padding:120px 0 56px}
   .about-body{padding-top:56px}
   .about-block{padding:48px 0}
-  .about-answer,.about-diff{padding:24px 20px}
+  .about-diff{padding:24px 20px}
 }
