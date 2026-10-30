@@ -575,9 +575,22 @@ a{color:inherit;text-decoration:none}
 
 @media(max-width:1024px){
   .case-grid{grid-template-columns:repeat(2,1fr)}
+  /* .case-group.has-* 的选择器权重高于 .case-grid，
+     所以响应式列数必须用同样权重覆盖，否则窄屏仍按 3 列排版。 */
+  .case-group.has-one .case-grid,
+  .case-group.has-two .case-grid,
+  .case-group.has-three .case-grid,
+  .case-group.has-many .case-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:640px){
   .case-grid{grid-template-columns:1fr}
+  .case-group.has-one .case-grid,
+  .case-group.has-two .case-grid,
+  .case-group.has-three .case-grid,
+  .case-group.has-many .case-grid{grid-template-columns:1fr}
+  /* 单列时卡片不再需要固定在第 1 列 */
+  .case-group.has-one .case-card{grid-column:auto;justify-self:stretch}
+  .case-group.has-two .case-card{max-width:none}
   .cases-hero{padding-top:120px;padding-bottom:48px}
   .case-group{margin-top:56px}
   .cases-cta-inner{flex-direction:column;align-items:flex-start}
