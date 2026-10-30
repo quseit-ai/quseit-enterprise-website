@@ -798,7 +798,7 @@
     'about.diff.2.foot': 'From "internal tooling" to "deliverable service"',
     'about.diff.3.num': '03 / LOW BARRIER',
     'about.diff.3.claim': 'Every employee can use it, and workflows are free to build',
-    'about.diff.3.desc': 'A desktop app, ready at startup, skills triggered by conversation — no prompt engineering, no backend to build. Get one real workflow running first, then decide whether to keep it.',
+    'about.diff.3.desc': 'A desktop app, ready at startup, skills triggered by conversation — no prompt engineering needed. We build workflows for you free, so you can try it first and then decide whether to keep it.',
     'about.diff.3.foot': 'From "using an AI tool" to "having an AI colleague"',
     'about.diff.4.num': '04 / CONTROL',
     'about.diff.4.claim': 'Data and models stay in your hands',
