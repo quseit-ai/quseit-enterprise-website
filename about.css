@@ -1,0 +1,168 @@
+/* ===== 关于页（about.html） =====
+   复用 styles.css 的 .cases-hero / .section / .sec-head / .contact / .footer，
+   本页独有样式集中在此，类名统一 .about- 前缀，避免影响其它页面。 */
+
+/* ===== Hero ===== */
+.about-hero{
+  background:var(--dark);color:var(--paper);
+  padding:130px 0 70px;position:relative;overflow:hidden;
+}
+.about-hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(to right,rgba(255,255,255,.04) 1px,transparent 1px);
+  background-size:calc(100%/6) 100%;opacity:.5;
+}
+.about-hero .kicker{color:#9a927f}
+.about-hero h1{
+  font-family:var(--serif);font-weight:900;
+  font-size:clamp(36px,4.6vw,56px);line-height:1.2;margin-top:24px;
+}
+.about-hero h1 em{font-style:normal;color:#8FB2F2}
+.about-hero .learn-sub{
+  margin-top:18px;font-size:17px;color:#b5ad9c;max-width:720px;line-height:1.75;
+}
+/* 深色 hero 上的按钮反色，否则与深底同色看不见 */
+.about-hero .btn-solid{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.about-hero .btn-solid:hover{background:#fff;color:var(--ink);border-color:#fff;box-shadow:4px 4px 0 rgba(246,243,236,.28)}
+.about-hero .btn-line{color:var(--paper);border-color:rgba(246,243,236,.5)}
+.about-hero .btn-line:hover{background:var(--paper);color:var(--ink);border-color:var(--paper);box-shadow:4px 4px 0 rgba(246,243,236,.28)}
+
+/* 面包屑 */
+.about-crumb{
+  font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:#9a927f;
+  display:flex;align-items:center;gap:10px;margin-bottom:24px;
+}
+.about-crumb a{color:#9a927f;transition:color .25s}
+.about-crumb a:hover{color:var(--accent)}
+.about-crumb .sep{color:#3A3428}
+.about-crumb .current{color:var(--paper)}
+
+/* ===== 主体区 ===== */
+.about-body{padding:80px 0 0;background:var(--paper)}
+.about-block{padding:64px 0;border-top:1px dashed var(--line)}
+.about-block:first-child{border-top:none}
+.about-block-label{
+  font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--accent);
+  margin-bottom:16px;display:flex;align-items:center;gap:12px;
+}
+.about-block-label::after{content:"";width:48px;height:1px;background:var(--accent)}
+.about-block-title{
+  font-family:var(--serif);font-weight:900;
+  font-size:clamp(26px,3vw,36px);line-height:1.3;margin-bottom:24px;
+}
+.about-block-title em{font-style:normal;color:var(--accent)}
+.about-prose{font-size:16px;line-height:1.95;color:var(--ink-2);max-width:860px}
+.about-prose + .about-prose{margin-top:16px}
+.about-prose b{color:var(--ink);font-weight:700}
+.about-prose em{font-style:normal;color:var(--accent);font-weight:700}
+
+/* 三个真问题 */
+.about-pains{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:0;
+  border:1.5px solid var(--ink);background:#fff;margin-top:8px;
+}
+.about-pain{padding:28px 26px;border-right:1px solid var(--line)}
+.about-pain:last-child{border-right:none}
+.about-pain-num{
+  font-family:var(--mono);font-size:12px;letter-spacing:.15em;color:var(--accent);
+  display:block;margin-bottom:12px;
+}
+.about-pain h3{font-family:var(--serif);font-weight:900;font-size:19px;line-height:1.45;margin-bottom:10px}
+.about-pain p{font-size:14px;line-height:1.85;color:var(--ink-2)}
+
+/* 三个解法 */
+.about-answers{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:8px}
+.about-answer{
+  background:#fff;border:1.5px solid var(--ink);padding:30px 28px;
+  box-shadow:6px 6px 0 var(--accent-soft);
+  transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s;
+}
+.about-answer:hover{transform:translate(-4px,-4px);box-shadow:10px 10px 0 var(--accent)}
+.about-answer-tag{
+  font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--accent);
+  display:block;margin-bottom:12px;
+}
+.about-answer h3{font-family:var(--serif);font-weight:900;font-size:21px;line-height:1.45;margin-bottom:12px}
+.about-answer p{font-size:14px;line-height:1.85;color:var(--ink-2)}
+
+/* 判断句 */
+.about-verdict{
+  margin-top:36px;padding:24px 28px;background:var(--ink);color:var(--paper);
+  border-left:4px solid var(--accent);font-size:17px;line-height:1.75;
+}
+.about-verdict b{color:#8FB2F2}
+
+/* ===== 四张差异卡 ===== */
+.about-diffs{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:8px}
+.about-diff{
+  background:#fff;border:1.5px solid var(--ink);padding:32px 30px;
+  display:flex;flex-direction:column;
+  transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s;
+}
+.about-diff:hover{transform:translate(-4px,-4px);box-shadow:8px 8px 0 var(--accent)}
+.about-diff-num{
+  font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--accent);
+  display:block;margin-bottom:14px;
+}
+.about-diff-claim{
+  font-family:var(--serif);font-weight:900;font-size:22px;line-height:1.4;
+  margin-bottom:14px;color:var(--ink);
+}
+.about-diff-desc{font-size:14.5px;line-height:1.85;color:var(--ink-2);margin-bottom:18px}
+.about-diff ul{list-style:none;margin-bottom:18px}
+.about-diff li{
+  font-size:14px;color:var(--ink-2);padding:6px 0 6px 22px;position:relative;
+}
+.about-diff li::before{
+  content:"";position:absolute;left:0;top:13px;width:8px;height:8px;
+  background:var(--accent-soft);border:1.5px solid var(--accent);
+}
+.about-diff-foot{
+  margin-top:auto;padding-top:16px;border-top:1px dashed var(--line);
+  font-size:13px;font-weight:700;color:var(--accent);
+}
+
+/* ===== 公司主体 ===== */
+.about-company{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:8px}
+.about-company-card{
+  background:#fff;border:1.5px solid var(--ink);padding:26px 24px;
+}
+.about-company-label{
+  font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--ink-3);
+  display:block;margin-bottom:10px;
+}
+.about-company-value{font-size:15px;line-height:1.7;color:var(--ink);font-weight:500}
+.about-company-value a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--line)}
+.about-company-value a:hover{border-bottom-color:var(--accent)}
+.about-mission{
+  margin-top:28px;padding:22px 26px;background:#fff;
+  border:1.5px solid var(--ink);border-left:4px solid var(--accent);
+  font-size:16px;line-height:1.8;color:var(--ink-2);
+}
+
+/* ===== 服务 ===== */
+.about-services{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:1.5px solid var(--ink);background:#fff}
+.about-service{
+  padding:26px 28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.about-service:nth-child(2n){border-right:none}
+.about-service:nth-child(n+3){border-bottom:none}
+.about-service h3{font-family:var(--serif);font-weight:900;font-size:19px;margin-bottom:8px}
+.about-service p{font-size:14px;line-height:1.8;color:var(--ink-2)}
+
+/* ===== 响应式 ===== */
+@media (max-width:1024px){
+  .about-pains,.about-answers,.about-company{grid-template-columns:1fr}
+  .about-pain{border-right:none;border-bottom:1px solid var(--line)}
+  .about-pain:last-child{border-bottom:none}
+  .about-diffs{grid-template-columns:1fr}
+  .about-services{grid-template-columns:1fr}
+  .about-service{border-right:none;border-bottom:1px solid var(--line)!important}
+  .about-service:last-child{border-bottom:none!important}
+}
+@media (max-width:640px){
+  .about-hero{padding:120px 0 56px}
+  .about-body{padding-top:56px}
+  .about-block{padding:48px 0}
+  .about-answer,.about-diff{padding:24px 20px}
+}

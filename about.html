@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n-title="about.meta.title">关于 QUSEIT Agent — 让 AI 智能体成为每个员工的「数字同事」</title>
+<meta name="description" data-i18n-desc="about.meta.desc" content="QAgent 企业智能体解决方案：把员工经验沉淀为可复用的企业技能资产，私有化部署让数据不出内网，模型自主选型不锁定供应商。">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&family=Noto+Sans+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+<!-- ===== 导航 ===== -->
+<header class="nav subpage-nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <img src="logo.svg" alt="QAgent Logo" class="brand-logo">
+      <span class="brand-name">QUSEIT</span>
+      <span class="brand-tag" data-i18n="brand.tag">企业智能体</span>
+    </a>
+    <nav class="nav-links">
+      <div class="nav-drop">
+        <button type="button" class="nav-drop-btn" aria-expanded="false" aria-haspopup="true">
+          <span data-i18n="nav.services">服务</span>
+        </button>
+        <div class="nav-drop-menu">
+          <a href="index.html#values" data-i18n="nav.values">核心价值</a>
+          <a href="index.html#product" data-i18n="nav.product">产品架构</a>
+          <a href="index.html#deploy" data-i18n="nav.deploy">部署方式</a>
+        </div>
+      </div>
+      <a href="about.html" class="sub-link-active" data-i18n="nav.about">为什么使用</a>
+      <a href="index.html#pricing" data-i18n="nav.pricing">价格</a>
+      <a href="cases/index.html" data-i18n="nav.cases">应用场景</a>
+      <a href="fde.html" data-i18n="nav.fde">FDE 培训</a>
+    </nav>
+    <button class="lang-switch mono" id="langSwitch" aria-label="切换语言">EN</button>
+    <div class="nav-cta">
+      <a href="#" class="btn btn-solid demo-open" data-i18n="nav.trial">请求演示</a>
+    </div>
+    <button class="nav-burger" id="burger" aria-label="菜单"><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="about-hero">
+  <div class="container">
+    <nav class="about-crumb" aria-label="面包屑">
+      <a href="index.html" data-i18n="nav.home">首页</a>
+      <span class="sep">/</span>
+      <span class="current" data-i18n="nav.about">为什么使用</span>
+    </nav>
+    <p class="kicker reveal">
+      <span class="kicker-dot"></span>
+      <span data-i18n="about.eyebrow">ABOUT · 关于 QUSEIT AGENT</span>
+    </p>
+    <h1 class="reveal d1" data-i18n="about.title">企业级 AI 的分水岭，<br>不是模型多强，<em>是它懂不懂这家企业</em></h1>
+    <p class="learn-sub reveal d2" data-i18n="about.subtitle">把员工散落在个人手里的经验，沉淀成组织可以长期复用的能力 —— 安全、可见、可控。</p>
+    <div class="hero-actions reveal d3">
+      <a href="#diff" class="btn btn-line btn-lg" data-i18n="about.action1">看我们做的四件事 <span class="arrow">→</span></a>
+      <a href="index.html#contact" class="btn btn-solid btn-lg" data-i18n="nav.trial">请求演示</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 主体 ===== -->
+<div class="about-body">
+
+  <!-- WHY · 我们为什么做这件事 -->
+  <section class="about-block">
+    <div class="container">
+      <p class="about-block-label" data-i18n="about.why.label">WHY · 我们为什么做这件事</p>
+      <h2 class="about-block-title" data-i18n="about.why.title">企业买了 AI 工具，卡住的从来不是模型不够聪明</h2>
+
+      <div class="about-pains">
+        <article class="about-pain reveal">
+          <span class="about-pain-num" data-i18n="about.why.p1.num">01 / 不懂业务</span>
+          <h3 data-i18n="about.why.p1.h3">工具用的是别人家的理解</h3>
+          <p data-i18n="about.why.p1.p">通用 AI 知道什么是「合同」，不知道贵公司的合同模板、审批口径、报销标准。每次都要重新描述一遍背景，说完了它还是按通用套路答。</p>
+        </article>
+        <article class="about-pain reveal d1">
+          <span class="about-pain-num" data-i18n="about.why.p2.num">02 / 经验流失</span>
+          <h3 data-i18n="about.why.p2.h3">经验跟着人走</h3>
+          <p data-i18n="about.why.p2.p">老销售的开场白、老会计的审核要点、架构师的调试路径，全在个人脑子里。人一走，能力就归零；新人上手，全靠反复问老同事。</p>
+        </article>
+        <article class="about-pain reveal d2">
+          <span class="about-pain-num" data-i18n="about.why.p3.num">03 / 不敢用</span>
+          <h3 data-i18n="about.why.p3.h3">能不能用，IT 心里没底</h3>
+          <p data-i18n="about.why.p3.p">数据出不出内网、谁看了什么、有没有留痕 —— 这些问题没答案，企业就只敢让 AI 写写文案，不敢让它碰真正的业务数据。</p>
+        </article>
+      </div>
+
+      <p class="about-block-title reveal" style="margin-top:56px" data-i18n="about.why.p4.title">我们把这三件事一起解决</p>
+
+      <div class="about-answers">
+        <article class="about-answer reveal">
+          <span class="about-answer-tag" data-i18n="about.ans1.tag">ANSWER 01</span>
+          <h3 data-i18n="about.ans1.h3">把员工经验，变成企业可复用的技能资产</h3>
+          <p data-i18n="about.ans1.p">员工自己用对话的方式创建 AI 技能 —— 财务主管把报销审核要点做成「智能审核技能」，老销售把成功路径做成「客户沟通技能」。一次定好，全员复用；新人按专家标准干活。</p>
+        </article>
+        <article class="about-answer reveal d1">
+          <span class="about-answer-tag" data-i18n="about.ans2.tag">ANSWER 02</span>
+          <h3 data-i18n="about.ans2.h3">把 AI 的边界，画在企业的规则之内</h3>
+          <p data-i18n="about.ans2.p">私有化部署让数据不出内网，租户物理隔离、权限分级、审计全程留痕。员工用得顺手，IT 守得住底线 —— 这两件事不冲突。</p>
+        </article>
+        <article class="about-answer reveal d2">
+          <span class="about-answer-tag" data-i18n="about.ans3.tag">ANSWER 03</span>
+          <h3 data-i18n="about.ans3.h3">把 AI 的使用权，交回给企业自己</h3>
+          <p data-i18n="about.ans3.p">QUSEIT 不提供模型服务。企业自主选择公有云模型（阿里云百炼 / 火山引擎 / 智谱 / DeepSeek）或部署私有模型，模型费用和选型权都在自己手里，不被供应商锁定。</p>
+        </article>
+      </div>
+
+      <p class="about-verdict reveal" data-i18n="about.verdict">我们的判断很简单：<b>企业级 AI 的分水岭，不是模型多强，是 AI 懂不懂这家企业。</b></p>
+    </div>
+  </section>
+
+  <!-- DIFFERENTIATION · 我们做的四件事 -->
+  <section class="about-block" id="diff">
+    <div class="container">
+      <p class="about-block-label" data-i18n="about.diff.label">DIFFERENTIATION · QUSEIT 的不同之处</p>
+      <h2 class="about-block-title" data-i18n="about.diff.title">我们做的四件事</h2>
+
+      <div class="about-diffs">
+        <article class="about-diff reveal">
+          <span class="about-diff-num" data-i18n="about.diff.1.num">01 / 理解力</span>
+          <h3 class="about-diff-claim" data-i18n="about.diff.1.claim">让 AI 真正理解你的企业</h3>
+          <p class="about-diff-desc" data-i18n="about.diff.1.desc">普通 AI 工具回答的是「这个岗位一般怎么做」；QUSEIT 回答的是「你们公司是怎么做的」。</p>
+          <ul>
+            <li data-i18n="about.diff.1.li1">一次定好技能，全员复用，不必每次重复描述背景</li>
+            <li data-i18n="about.diff.1.li2">标准化技能，新人产出专家水平，质量不随人波动</li>
+            <li data-i18n="about.diff.1.li3">技能归企业所有 —— 人走能力留，经验沉淀为组织资产</li>
+            <li data-i18n="about.diff.1.li4">财务 / 人力 / 销售等常见场景即装即用</li>
+          </ul>
+          <p class="about-diff-foot" data-i18n="about.diff.1.foot">把「老员工的脑子」变成「企业的资产」</p>
+        </article>
+
+        <article class="about-diff reveal d1">
+          <span class="about-diff-num" data-i18n="about.diff.2.num">02 / 门槛</span>
+          <h3 class="about-diff-claim" data-i18n="about.diff.2.claim">每个员工都有，人人都用得动</h3>
+          <p class="about-diff-desc" data-i18n="about.diff.2.desc">不是给少数人配的工具，是全员的工作台。装在电脑上的桌面应用，开机即用，不用部署、不用培训基础设施。</p>
+          <ul>
+            <li data-i18n="about.diff.2.li1">自然语言对话，像跟同事聊天一样问问题</li>
+            <li data-i18n="about.diff.2.li2">长期记忆：用得越久，越懂你的偏好和习惯</li>
+            <li data-i18n="about.diff.2.li3">工作区文件浏览：AI 方案直接写入工作目录</li>
+            <li data-i18n="about.diff.2.li4">多模型切换：简单问题走便宜模型，复杂任务走强模型</li>
+          </ul>
+          <p class="about-diff-foot" data-i18n="about.diff.2.foot">使用感受：从「用 AI 工具」变成「有一个 AI 同事在旁边」</p>
+        </article>
+
+        <article class="about-diff reveal d2">
+          <span class="about-diff-num" data-i18n="about.diff.3.num">03 / 掌控</span>
+          <h3 class="about-diff-claim" data-i18n="about.diff.3.claim">从数据到技能资产全程自主掌控</h3>
+          <p class="about-diff-desc" data-i18n="about.diff.3.desc">AI 的使用，从「看不见」变成「可掌控」。</p>
+          <ul>
+            <li data-i18n="about.diff.3.li1">私有化部署，数据全程不出域，满足等保合规要求</li>
+            <li data-i18n="about.diff.3.li2">租户物理隔离，平台不可越权访问企业内部数据</li>
+            <li data-i18n="about.diff.3.li3">权限管理，谁能用什么一目了然；关键操作全程留痕可导出审计</li>
+            <li data-i18n="about.diff.3.li4">按席位订阅，成本透明可控，超员自动提醒</li>
+          </ul>
+          <p class="about-diff-foot" data-i18n="about.diff.3.foot">管理感受：既不阻碍员工使用，又守住安全底线</p>
+        </article>
+
+        <article class="about-diff reveal d3">
+          <span class="about-diff-num" data-i18n="about.diff.4.num">04 / 生态</span>
+          <h3 class="about-diff-claim" data-i18n="about.diff.4.claim">不试图自己做完所有事</h3>
+          <p class="about-diff-desc" data-i18n="about.diff.4.desc">QUSEIT Agent 的落地，靠的不是一家供应商闷头做完。</p>
+          <ul>
+            <li data-i18n="about.diff.4.li1">渠道伙伴：经过认证的地区总代理与系统集成商，把智能体带入各行各业</li>
+            <li data-i18n="about.diff.4.li2">交付伙伴：业务骨干经 FDE 培训成为企业内部前沿交付工程师</li>
+            <li data-i18n="about.diff.4.li3">实践者生态：U1000 · FDE 实践者赋能计划，24 门场景化工作坊</li>
+          </ul>
+          <p class="about-diff-foot" data-i18n="about.diff.4.foot">工具交付只是起点，真正的交付能力长在企业自己人手里</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPANY · 公司主体 -->
+  <section class="about-block">
+    <div class="container">
+      <p class="about-block-label" data-i18n="about.company.label">COMPANY · 公司主体</p>
+      <h2 class="about-block-title" data-i18n="about.company.title">谁在运营 QUSEIT</h2>
+
+      <div class="about-company">
+        <div class="about-company-card reveal">
+          <span class="about-company-label" data-i18n="about.company.legal.label">公司全称</span>
+          <span class="about-company-value" data-i18n="about.company.legal.value">北京优趣天下信息技术有限公司</span>
+        </div>
+        <div class="about-company-card reveal d1">
+          <span class="about-company-label" data-i18n="about.company.addr.label">注册地址</span>
+          <span class="about-company-value" data-i18n="about.company.addr.value">北京市海淀区永澄北路2号院1号楼一层 A1839</span>
+        </div>
+        <div class="about-company-card reveal d2">
+          <span class="about-company-label" data-i18n="about.company.website.label">企业版站点</span>
+          <span class="about-company-value">
+            <a href="https://enterprise.quseit.com" target="_blank" rel="noopener noreferrer" data-i18n="about.company.website.value">enterprise.quseit.com</a>
+          </span>
+        </div>
+      </div>
+
+      <p class="about-mission reveal" data-i18n="about.company.mission">让 AI 智能体成为每个员工的「数字同事」，把企业散落在个人手里的经验，变成组织可以长期复用的能力 —— 这是我们正在做的事。</p>
+    </div>
+  </section>
+
+  <!-- SERVICES · 除了产品，我们还提供 -->
+  <section class="about-block">
+    <div class="container">
+      <p class="about-block-label" data-i18n="about.svc.label">SERVICES · 除了产品，我们还提供</p>
+      <h2 class="about-block-title" data-i18n="about.svc.title">从咨询、试点、培训到持续运营</h2>
+
+      <div class="about-services">
+        <div class="about-service reveal">
+          <h3 data-i18n="about.svc.1.h3">FDE 培训</h3>
+          <p data-i18n="about.svc.1.p">把业务骨干训练成企业自己的前沿交付工程师：10–12 人 / 班，集中式或分散式两种交付，底座可选、不绑定单一产品。</p>
+        </div>
+        <div class="about-service reveal d1">
+          <h3 data-i18n="about.svc.2.h3">技能定制开发</h3>
+          <p data-i18n="about.svc.2.p">工程师按贵司业务场景定制 AI 技能，从场景梳理到上线验收全程负责。</p>
+        </div>
+        <div class="about-service reveal d2">
+          <h3 data-i18n="about.svc.3.h3">数据接入</h3>
+          <p data-i18n="about.svc.3.p">对接企业内部 ERP、CRM、知识库与数据源，让智能体真正接得上业务系统。</p>
+        </div>
+        <div class="about-service reveal d3">
+          <h3 data-i18n="about.svc.4.h3">使用培训</h3>
+          <p data-i18n="about.svc.4.p">面向管理员 / 创作者 / 普通员工的分层培训，让工具真正被用起来。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ===== CTA ===== -->
+<section class="section contact" id="contact">
+  <div class="container contact-inner">
+    <div class="contact-copy reveal">
+      <p class="sec-index mono">GET STARTED</p>
+      <h2 class="contact-title" data-i18n="contact.title">让 AI 成为贵司的<br><em>数字资产</em></h2>
+      <p class="contact-sub" data-i18n="contact.sub">建议先安排一次需求沟通会议，由方案顾问基于贵司实际情况，给出具体的部署建议与报价。</p>
+      <ul class="contact-list">
+        <li data-i18n="contact.l1"><b>产品咨询</b>获取针对贵企业的诊断与建议</li>
+        <li data-i18n="contact.l2"><b>试用申请</b>15 天 SaaS 免费试用 / 1 个月私有定制 POC</li>
+        <li data-i18n="contact.l3"><b>方案报价</b>基于贵司规模和场景定制报价</li>
+      </ul>
+    </div>
+    <div class="contact-channels reveal d1">
+      <div class="channel-card">
+        <span class="mono channel-label" data-i18n="ch1.label">WECHAT · 微信咨询</span>
+        <p class="channel-desc" data-i18n="ch1.desc">搜索添加，备注「QUSEIT」</p>
+        <div class="channel-value">
+          <b>yhc-startup</b>
+          <button class="btn btn-line btn-sm copy-btn" data-copy="yhc-startup" data-tip-key="wechat" data-i18n="ch.btn">复制</button>
+        </div>
+      </div>
+      <div class="channel-card">
+        <span class="mono channel-label" data-i18n="ch2.label">EMAIL · 邮件沟通</span>
+        <p class="channel-desc" data-i18n="ch2.desc">发送需求与场景，1 个工作日内回复</p>
+        <div class="channel-value">
+          <b>ceo@quseit.com</b>
+          <button class="btn btn-line btn-sm copy-btn" data-copy="ceo@quseit.com" data-tip-key="email" data-i18n="ch.btn">复制</button>
+        </div>
+      </div>
+      <p class="channel-tip" id="copyTip" data-i18n="ch.tip">产品咨询 / 15 天 SaaS 免费试用 / 私有定制 POC，均可通过以上方式联系</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="logo.svg" alt="QAgent Logo" class="brand-logo">
+      <div>
+        <b> QUSEIT Agent (QAgent) </b>
+        <p data-i18n="footer.slogan">让 AI 智能体成为每个员工的「数字同事」</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html#values" data-i18n="nav.values">核心价值</a>
+      <a href="index.html#product" data-i18n="nav.product">产品架构</a>
+      <a href="index.html#deploy" data-i18n="nav.deploy">部署方式</a>
+      <a href="index.html#pricing" data-i18n="nav.pricing">价格</a>
+      <a href="cases/index.html" data-i18n="nav.cases">应用场景</a>
+      <a href="fde.html" data-i18n="nav.fde">FDE 培训</a>
+      <a href="partner.html" data-i18n="nav.partners">合作伙伴</a>
+      <a href="about.html" data-i18n="nav.about">为什么使用</a>
+    </div>
+    <p class="footer-copy mono">© 2026 QUSEIT · ENTERPRISE AGENT SOLUTION</p>
+  </div>
+</footer>
+
+<!-- ===== 请求演示模态框 ===== -->
+<div class="demo-modal" id="demoModal" aria-hidden="true">
+  <div class="demo-dialog" role="dialog" aria-modal="true" aria-label="请求演示">
+    <iframe class="demo-frame" id="demoFrame" data-src="https://iwwtpmp09eo.feishu.cn/share/base/form/shrcnGSnBhjH4Q6jxZCGZ9BE2Ac" title="请求演示表单"></iframe>
+  </div>
+</div>
+
+<script src="i18n.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
