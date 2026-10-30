@@ -174,11 +174,18 @@ html[lang="en"] .hero-title{font-size:clamp(29px,3.6vw,52px)}
 .hero-visual{position:relative}
 .hero-figure{
   border:1.5px solid var(--ink);background:#fff;padding:12px;
+  width:436px;max-width:100%;margin:0 auto;
   box-shadow:10px 10px 0 var(--accent-soft);
   transform:rotate(1.2deg);transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s;
 }
 .hero-figure:hover{transform:rotate(0);box-shadow:14px 14px 0 var(--accent)}
-.hero-figure img{width:100%;aspect-ratio:4/3.4;object-fit:cover;display:block}
+/* 图片原图是 1200x1200 正方形。此前的 aspect-ratio:4/3.4 配 object-fit:cover
+   会把图放大 17% 并裁掉上下各 2.6%，顶部标题紧贴边框。改为 1/1 让原图
+   完整显示、零裁切；尺寸固定 410x410 并在卡片内居中。 */
+.hero-figure img{
+  width:410px;max-width:100%;height:410px;
+  aspect-ratio:1/1;object-fit:cover;display:block;margin:0 auto;
+}
 /* 图注排版：FIG.01 靠左，说明文字靠右。
    说明文字原为裸文本节点，flex 下靠右不可靠，改为独立 span 明确右对齐。 */
 .hero-caption{
@@ -191,10 +198,14 @@ html[lang="en"] .hero-title{font-size:clamp(29px,3.6vw,52px)}
 }
 .hero-diamonds{position:absolute;inset:0;pointer-events:none;z-index:2}
 .hd{position:absolute;border-radius:7px;transform:rotate(45deg);box-shadow:0 10px 24px rgba(22,19,14,.18)}
-/* 三个方块都锚在图片区，不覆盖图注文字。
-   .hd-blue 原 bottom:-24px 会压住图注文字尾部（实测压住「上线」两字），
-   改为 bottom:-64px 让它落到卡片下边框之外，完全避开图注行。 */
-.hd-red{width:34px;height:34px;background:var(--c-red);top:-30px;right:52px;animation:float 5s ease-in-out infinite}
+/* 三个装饰方块都放在卡片外侧, 不覆盖图片与图注。
+   卡片外框 = 图片 410 + padding 12*2 + border 1.5*2 = 437px 宽;
+   .hero-visual 高 471px, 图片区从内容区顶部开始。
+   .hd-red 原本 top:-30px 会跨在卡片上边框上 (方块 34px 高 + 浮动动画上浮 14px),
+   必然有部分落在图片内 —— 改为 -48px 让它完全悬在卡片上方。
+   .hd-blue 原本 bottom:-24px 会压住图注文字尾部 (实测压住「上线」两字),
+   改为 -64px 让它落到卡片下边框之外。 */
+.hd-red{width:34px;height:34px;background:var(--c-red);top:-48px;right:52px;animation:float 5s ease-in-out infinite}
 .hd-green{width:22px;height:22px;background:var(--c-green);top:38%;left:-34px;animation:float 6s ease-in-out .8s infinite}
 .hd-blue{width:44px;height:44px;background:var(--c-blue);bottom:-64px;right:-20px;animation:float 7s ease-in-out 1.5s infinite}
 @keyframes float{0%,100%{transform:rotate(45deg) translateY(0)}50%{transform:rotate(45deg) translateY(-14px)}}
