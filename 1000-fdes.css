@@ -93,7 +93,15 @@
   padding:4px 10px;
 }
 .u1000-first-flow .arw{opacity:.45}
-.u1000-first-side{
+/* 报名入口(站外 StartupGrind 活动页) */
+.u1000-first-cta{
+  margin-top:26px;padding-top:22px;
+  border-top:1px dashed var(--line);
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+}
+.u1000-first-cta-note{
+  font-size:11.5px;letter-spacing:.08em;color:var(--ink-3);
+}.u1000-first-side{
   border-left:1.5px solid var(--ink);background:var(--paper-2);
   padding:32px 30px;display:flex;flex-direction:column;gap:16px;justify-content:center;
 }
@@ -205,6 +213,7 @@
   .u1000-items{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:640px){
+  .u1000-first-cta{flex-direction:column;align-items:flex-start;gap:10px}
   .u1000-stages,.u1000-personas{grid-template-columns:1fr}
   .u1000-first-main{padding:26px 22px}
   .u1000-first-side{padding:26px 22px}

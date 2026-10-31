@@ -628,6 +628,8 @@
     'u1000.first.flow.2': "Map",
     'u1000.first.flow.3': "Ask",
     'u1000.first.flow.4': "Visualize",
+    'u1000.first.cta': 'Register for this workshop',
+    'u1000.first.cta.note': 'StartupGrind · Nanning',
     'u1000.first.s1t': "What you build",
     'u1000.first.s1d': "A data agent that answers business questions, plus a trend chart",
     'u1000.first.s2t': "Length & format",
