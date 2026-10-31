@@ -816,6 +816,11 @@
     'about.company.mission': 'Turn experience scattered across individual desks into capability the organization can reuse for years — so "digital assets" truly belong to the enterprise. This is what we are building.',
 
     // ===== privacy.html =====
+    // ===== 微信咨询悬浮框 =====
+    'qr.label': 'WeChat',
+    'qr.title': 'Scan to chat on WeChat',
+    'qr.sub': 'Mon-Fri · instant reply during work hours, slower at other times',
+
     'nav.privacy': 'Privacy Policy',
     'privacy.meta.title': 'Privacy Policy — QUSEIT Enterprise Agents',
     'privacy.meta.desc': 'How the QUSEIT enterprise agent site collects, uses and protects information, and the choices you have.',

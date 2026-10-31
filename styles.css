@@ -534,6 +534,113 @@ html[lang="en"] .hero-title{font-size:clamp(29px,3.6vw,52px)}
   .qa-consent{left:12px;right:12px;bottom:12px;max-width:none}
 }
 
+/* ===== 微信二维码悬浮框(右下角 fixed, hover / tap 展开) =====
+   参考 quseit-website 的 .qr-float:纯 CSS checkbox 切换,
+   桌面 hover 展开, 移动端点击展开。 */
+.qr-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 9999;
+  font-family: var(--sans);
+}
+.qr-float-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.qr-float-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(22, 19, 14, .18);
+  transition: background .2s ease, transform .2s ease, box-shadow .2s ease;
+  user-select: none;
+}
+.qr-float-btn:hover,
+.qr-float-toggle:focus-visible + .qr-float-btn,
+.qr-float-toggle:checked + .qr-float-btn {
+  background: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(28, 100, 217, .28);
+}
+.qr-float-btn svg { flex-shrink: 0; }
+.qr-float-label { line-height: 1; }
+
+.qr-float-panel {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 12px);
+  width: 240px;
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 18px 18px 16px;
+  box-shadow: 0 16px 40px rgba(22, 19, 14, .18);
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px) scale(.96);
+  transform-origin: bottom right;
+  transition: opacity .22s ease, transform .22s cubic-bezier(.2, .8, .2, 1);
+}
+.qr-float:hover .qr-float-panel,
+.qr-float-toggle:focus-visible ~ .qr-float-panel,
+.qr-float-toggle:checked ~ .qr-float-panel {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+.qr-float-img {
+  width: 180px;
+  height: 180px;
+  display: block;
+  margin: 0 auto 12px;
+  object-fit: cover;
+  background: #fff;
+}
+.qr-float-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 4px;
+  line-height: 1.4;
+}
+.qr-float-sub {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .04em;
+  color: var(--ink-3);
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 720px) {
+  .qr-float {
+    right: 16px;
+    bottom: 16px;
+  }
+  .qr-float-btn {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+  .qr-float-label { display: none; } /* 移动端只显示图标,不显示文字 */
+  .qr-float-panel {
+    width: 200px;
+    padding: 14px 14px 12px;
+  }
+  .qr-float-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 /* ===== 请求演示模态框 ===== */
 .demo-modal{
   position:fixed;inset:0;z-index:1000;display:none;
