@@ -25,7 +25,11 @@
 .cases-crumb{
   font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:#9a927f;
   display:flex;align-items:center;gap:10px;margin-bottom:24px;
+  /* 窄屏下英文面包屑(如 Work-Permit Filling)过长会溢出屏幕,
+     允许换行并让当前项占满剩余空间 */
+  flex-wrap:wrap;min-width:0;
 }
+.cases-crumb .current{min-width:0;overflow-wrap:anywhere}
 .cases-crumb a{color:#9a927f}
 .cases-crumb a:hover{color:var(--accent)}
 .cases-crumb .sep{color:#3A3428}

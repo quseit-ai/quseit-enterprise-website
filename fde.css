@@ -4,7 +4,9 @@
 
 /* Hero 主标题里的强调词（深底上用浅蓝，与 .compare-head .hl 一致） */
 .cases-hero h1 em{font-style:normal;color:#8FB2F2}
-/* 强调词整体不断行，避免「自己的」和「FDE」被拆到两行 */
+/* 强调词整体不断行，避免「自己的」和「FDE」被拆到两行。
+   但窄屏下 nowrap 会把「Forward Deployed Engineers」整词挤出屏幕
+   (320px 视口溢出到 621px)，故 820px 以下放开。 */
 .fde-hero h1 em{white-space:nowrap}
 /* 深色 hero 上的描边按钮：.btn-line 默认是深色描边+深色字，在深底上看不见 */
 .fde-hero .btn-line{color:var(--paper);border-color:rgba(246,243,236,.5)}
@@ -13,9 +15,10 @@
    只剩白字没有按钮形状，因此反色为浅底深字 */
 .fde-hero .btn-solid{background:var(--paper);color:var(--ink);border-color:var(--paper)}
 .fde-hero .btn-solid:hover{background:#fff;color:var(--ink);border-color:#fff;box-shadow:4px 4px 0 rgba(246,243,236,.28)}
-/* 窄屏不再用主动断行，交给自动换行 */
+/* 窄屏不再用主动断行，交给自动换行；同时放开 em 的 nowrap。 */
 @media (max-width:820px){
   .fde-hero h1 br{display:none}
+  .fde-hero h1 em{white-space:normal}
 }
 
 /* Hero 下方的状态条 */

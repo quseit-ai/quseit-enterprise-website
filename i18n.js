@@ -481,7 +481,7 @@
     'fde.meta.desc': 'FDE training for enterprises: we train your business leads to scope scenarios, build skills, clear compliance review and turn expertise into reusable agent assets. Any agent platform — not locked to one vendor.',
     'fde.nav.cta': 'Talk to us',
     'fde.hero.kicker': 'FDE TRAINING · FORWARD DEPLOYED ENGINEER',
-    'fde.hero.title': 'Turn your business leads<br>into in-house <em>Forward Deployed Engineers</em>',
+    'fde.hero.title': 'Turn your business leads<br> into in-house <em>Forward Deployed Engineers</em>',
     'fde.hero.sub': 'Not a course you forget by Friday. The material comes from projects we actually delivered, not an operations manual — participants leave able to scope scenarios, build skills, clear compliance review and turn expertise into company assets.',
     'fde.hero.action1': 'Book a conversation',
     'fde.hero.action2': 'See the curriculum <span class="arrow">→</span>',
