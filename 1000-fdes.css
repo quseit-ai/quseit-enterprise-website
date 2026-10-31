@@ -37,6 +37,13 @@
   font-size:16px;line-height:1.85;max-width:720px;margin:0;
   color:var(--ink-2);
 }
+/* 术语释义: 标题里的 FDE 第一次出现时解释 */
+.u1000-hero .u1000-def{
+  font-size:14.5px;line-height:1.8;max-width:680px;margin:0;
+  color:var(--ink-2);
+  padding-left:14px;border-left:2px solid var(--accent);
+}
+.u1000-hero .u1000-def b{color:var(--ink);font-weight:700}
 
 /* 状态条 */
 .u1000-status{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px}

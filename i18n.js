@@ -609,6 +609,7 @@
     'u1000.crumb.cur': "U1000 · FDE Practitioner Enablement",
     'u1000.hero.kicker': "CAMPAIGN · U1000 · FDE PRACTITIONER ENABLEMENT",
     'u1000.hero.title': "Train 1,000 AI practitioners<br> into FDEs who can deliver",
+    'u1000.hero.def': "FDE (Forward Deployed Engineer) — the person who can turn one business workflow inside an enterprise into an agent that actually runs, clears review, and gets used by the business.",
     'u1000.hero.sub': "24 workshops, each one a real enterprise workflow — from connecting an agent to your database, to deploying it inside the corporate network. Every course ends with something you must be able to demo.",
     'u1000.chip.1t': "First workshop",
     'u1000.chip.1s': "2 sessions a month",
@@ -618,7 +619,7 @@
     'u1000.why.label': "WHY · WHY WE ARE DOING THIS",
     'u1000.why.title': "The tools are not the gap. The people who can make them work are.",
     'u1000.why.p1': "Enterprises buy the platform, wire up the model, and then stall at the demo stage. The usual reason is not technical — nobody can translate a business workflow into a working agent, and nobody can carry it through review, launch, and actual use by the business.",
-    'u1000.why.p2': "U1000 trains exactly that person: the FDE. No conceptual warm-up — we hand you a real workflow instead: orders, tickets, reconciliation, procurement, contracts. Twenty-four courses, twenty-four business lines, each with something you must demo on the spot. If you cannot produce it, the course does not count.",
+    'u1000.why.p2': "U1000 trains exactly that person — an FDE who can deliver independently. No conceptual warm-up — we hand you a real workflow instead: orders, tickets, reconciliation, procurement, contracts. Twenty-four courses, twenty-four business lines, each with something you must demo on the spot. If you cannot produce it, the course does not count.",
     'u1000.first.label': "FIRST WORKSHOP",
     'u1000.first.title': "Course one: connect the agent to your own data",
     'u1000.first.cat': "WORKSHOP 01 · E-COMMERCE ORDERS",
@@ -783,6 +784,8 @@
     'privacy.meta.title': 'Privacy Policy — QUSEIT Enterprise Agents',
     'privacy.meta.desc': 'How the QUSEIT enterprise agent site collects, uses and protects information, and the choices you have.',
     'privacy.title': 'QUSEIT Enterprise Agent Privacy Policy',
+    // 与 privacy.html 同步。日期 = 政策正文最后实质修改日, 写死不自动生成;
+    // 只有政策条款变化时才手动改这两处。
     'privacy.updated': 'LAST UPDATED · 2026-10-30',
     'privacy.intro1': 'This privacy policy (the "Policy") explains what information QUSEIT ("we", "us") may collect, use and protect when you visit the QUSEIT enterprise agent website (the "Site"), and the choices and rights you have. The Site is a product introduction and inquiry entry point; it offers no online account registration or content authoring.',
     'privacy.intro2': 'The Site is offered in two deployment modes: a public SaaS edition and a private custom edition. The private edition deploys the entire system inside your own intranet or private cloud, and its data processing is governed by the service contract signed with QUSEIT. This Policy covers the Site itself only.',
