@@ -608,7 +608,7 @@
     'u1000.crumb.home': "Home",
     'u1000.crumb.cur': "U1000 · FDE Practitioner Enablement",
     'u1000.hero.kicker': "CAMPAIGN · U1000 · FDE PRACTITIONER ENABLEMENT",
-    'u1000.hero.title': "Helping 1,000 AI practitioners<br>put agents to work in real business",
+    'u1000.hero.title': "Train 1,000 AI practitioners<br> into FDEs who can deliver",
     'u1000.hero.sub': "24 workshops, each one a real enterprise workflow — from connecting an agent to your database, to deploying it inside the corporate network. Every course ends with something you must be able to demo.",
     'u1000.chip.1t': "First workshop",
     'u1000.chip.1s': "2 sessions a month",
