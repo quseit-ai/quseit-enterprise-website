@@ -652,8 +652,8 @@
     'u1000.stage.5.why': "One scenario is personal skill; a reusable asset is enterprise capability.",
     'u1000.stage.6.name': "Delivery at scale",
     'u1000.stage.6.why': "The last mile is never technical — it is integration, cost, adoption and sign-off.",
-    'u1000.who.label': "WHO · WHO SHOULD JOIN",
-    'u1000.who.title': "Four kinds of people, one shared goal: put AI into real work",
+    // 谁该来: 段落标题已上移至 hero 的 audience 行
+    'u1000.audience.label': "WHO · WHO SHOULD JOIN",
     'u1000.who.1.tag': "BUSINESS",
     'u1000.who.1.h3': "Business leads",
     'u1000.who.1.p': "They know exactly where the process hurts and which ideas will never get used. They want to build — but cannot code.",
