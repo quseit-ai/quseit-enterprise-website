@@ -668,6 +668,10 @@
     'u1000.who.4.p': "They deliver AI projects for clients, rebuild the same wheels every time, and lack a method that is reusable and can be signed off.",
     'u1000.get.title': "Five kinds of support, from the first course to certification",
     'u1000.get.1.tag': "P1 · COURSES",
+    // 收尾 CTA 条
+    'u1000.cta.title': "Start with the first workshop,<br><em>build something first</em>",
+    'u1000.cta.sub': "Two sessions a month, 10-12 people each. Tell us your industry and the problem you want to solve, and we will match you to a cohort.",
+    'u1000.cta.btn': "Register for the first workshop",
     'u1000.get.1.h3': "24 scenario workshops",
     'u1000.get.1.p': "Six stages, from data Q&A to private deployment — each one a complete business workflow.",
     'u1000.get.2.tag': "P2 · MATERIALS",

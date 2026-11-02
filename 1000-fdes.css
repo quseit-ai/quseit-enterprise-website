@@ -231,6 +231,9 @@
 .u1000-item.is-red .u1000-item-tag{color:var(--ink)}
 
 
+/* ---------- 收尾 CTA 条 ---------- */
+.u1000-cta{padding:60px 0}
+
 /* ---------- 响应式 ---------- */
 @media (max-width:1024px){
   .u1000-stages{grid-template-columns:repeat(2,1fr)}
