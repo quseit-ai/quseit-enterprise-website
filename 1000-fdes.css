@@ -90,6 +90,18 @@
 }
 .u1000-prose:last-child{margin-bottom:0}
 
+/* 段内二级块: WHAT YOU GET 的五张卡并入 WHY 段后,
+   用小标题 + 顶部细线与上方散文区分, 不再另起一段 */
+.u1000-subsection{
+  margin-top:44px;padding-top:34px;
+  border-top:1px dashed var(--line);
+}
+.u1000-subsection-title{
+  font-family:var(--serif);font-weight:900;
+  font-size:clamp(20px,2.1vw,26px);line-height:1.35;
+  margin:0 0 18px;color:var(--ink);
+}
+
 /* ---------- 首场工作坊 ---------- */
 .u1000-first{
   margin-top:34px;border:1.5px solid var(--ink);background:#fff;
