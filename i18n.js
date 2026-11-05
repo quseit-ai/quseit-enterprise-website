@@ -170,14 +170,14 @@
     'contact.title': 'Run one workflow,<br><em>then decide</em>',
     'contact.sub': 'Get one real workflow running during the trial; whether to keep it, and how to deploy it, is decided by the result.',
     'contact.l1': '<b>Product Consultation</b>Get diagnosis and recommendations tailored to your enterprise',
-    'contact.l2': '<b>Trial Application</b>15-day free SaaS trial / 1-month private deployment POC',
+    'contact.l2': '<b>Trial Application</b>Try before you buy — we open a trial account for you',
     'contact.l3': '<b>Custom Quote</b>Pricing tailored to your company size and scenarios',
     'ch1.label': 'WECHAT · CONSULTING',
     'ch1.desc': "Search to add, and mention \"QAgent\"",
     'ch2.label': 'EMAIL · CONTACT',
     'ch2.desc': 'Send us your needs and scenarios — reply within 1 business day',
     'ch.btn': 'Copy',
-    'ch.tip': 'Product consultation / 15-day SaaS trial / private POC — reach us via either channel above',
+    'ch.tip': 'Product consultation / trial account / private deployment — reach us via either channel above',
 
     // ===== cases/index.html =====
     // ===== 案例详情页（doc-assistant.html / work-permit.html）=====
@@ -252,7 +252,7 @@
     'doc.kpi4.n': '100%',
     'doc.kpi4.l': 'Compliance-trace coverage',
     'doc.cta.h3': 'Want this capability <em>in your emergency document corpus?</em>',
-    'doc.cta.p': '15-day SaaS trial / 1-month private POC — we integrate your plans and case histories, running on-site within 2 weeks.',
+    'doc.cta.p': 'Trial account / private deployment — we integrate your plans and case histories, running on-site within 2 weeks.',
     'doc.cta.btn1': 'Request a Demo',
     'doc.cta.btn2': 'View more scenarios',
     'doc.pager.prev': '← Back to Use Cases',
@@ -327,7 +327,7 @@
     'wp.kpi4.n': '8 types',
     'wp.kpi4.l': 'Permit templates covered',
     'wp.cta.h3': 'Want <em>on-site permits</em> filled without overtime?',
-    'wp.cta.p': '15-day SaaS trial / 1-month private POC — we integrate your permit templates and approver list; pilot up within 2 weeks.',
+    'wp.cta.p': 'Trial account / private deployment — we integrate your permit templates and approver list; pilot up within 2 weeks.',
     'wp.cta.btn1': 'Request a Demo',
     'wp.cta.btn2': 'View more scenarios',
     'wp.pager.prev': '← Smart Document Q&A Solution',
@@ -441,7 +441,7 @@
     'cc.hr.rs': 'JD Drafting Speed',
 
     'cta.h3': "Don't see your industry? <em>Tell us</em> — let's build it together.",
-    'cta.p': 'Every industry has know-how worth distilling. 15-day SaaS trial or 1-month private POC — let\'s turn your scenarios into reusable AI skills together.',
+    'cta.p': 'Every industry has know-how worth distilling. Open a trial account or go private — let\'s turn your scenarios into reusable AI skills together.',
     'cta.btn': 'Request a Demo',
 
     'footer.slogan': 'Build workflows free, try before you buy',
